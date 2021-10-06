@@ -1,4 +1,4 @@
-const brandColors = {
+export const brandColors = {
     deep: {
         "900": "#030823",
         "800": "#091139",
@@ -62,7 +62,7 @@ const brandColors = {
     }
 }
 
-const semanticColors = {
+export const semanticColors = {
     jade: {
         "700": "#1B8C82",
         "600": "#2EA096",
@@ -101,7 +101,7 @@ const semanticColors = {
     }
 }
 
-const neutralColors= {
+export const neutralColors= {
     gray: {
         "900": "#1D1E1F",
         "800": "#4F576A",
@@ -114,6 +114,3 @@ const neutralColors= {
         "100": "#FFFFFF",
     }
 }
-
-
-export default { brandColors, semanticColors, neutralColors};
