@@ -1,5 +1,5 @@
 {
-  "name": "giveth-design-system",
+  "name": "@giveth/ui-design-system",
   "version": "0.1.0",
   "files": [
     "dist"
@@ -16,7 +16,8 @@
   "scripts": {
     "build": "tsc",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "prepare": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app",
