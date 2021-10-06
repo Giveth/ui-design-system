@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { H4 } from '../components/headlines/H4';
+import { H4 } from '../../../components/typography/headlines/H4';
 
 export default {
   title: 'Example/H4',

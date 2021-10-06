@@ -1,14 +1,13 @@
 import styled from "styled-components";
-import { brandColors } from "../../common/colors";
+import { brandColors } from "../../../common/colors";
 import { IHeadingProps } from "./common";
 
-export const H2 = styled.h2<IHeadingProps>`
-    /* Heading/H2 | 500 */
+export const H3 = styled.h3<IHeadingProps>`
+    /* Heading/H3 | 500 */
     font-family: TeX Gyre Adventor;
     font-style: normal;
     font-weight: ${props => props.weight || 500};
-    font-size: 52px;
-    line-height: 76px;
-    letter-spacing: -0.02em;
+    font-size: 41px;
+    line-height: 60px;
     color: ${brandColors.deep[900]};
 `;
