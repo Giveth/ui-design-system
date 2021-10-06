@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { brandColors } from "../../common/colors";
+import { brandColors } from "../../../common/colors";
 import { IHeadingProps } from "./common";
 
 export const H4 = styled.h4<IHeadingProps>`

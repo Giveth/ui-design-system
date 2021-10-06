@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { H5 } from '../components/headlines/H5';
+import { H5 } from '../components/typography/headlines/H5';
 
 export default {
   title: 'Example/H5',
