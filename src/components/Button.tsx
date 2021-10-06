@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import colors from "../common/colors";
+import { brandColors } from "../common/colors";
 
 interface ButtonProps {
   /**
@@ -18,8 +18,8 @@ interface ButtonProps {
 
 export const Button = styled.button<ButtonProps>`
   /* Adapt the colors based on primary prop */
-  background: ${props => props.primary ?  colors.red :  colors.white};
-  color: ${props => props.primary ? colors.white : colors.red};
+  background: ${props => props.primary ?  brandColors.giv[600] :  brandColors.giv["000"]};
+  color: ${props => props.primary ? brandColors.giv["000"] : brandColors.giv[600]};
   font-size: ${props => {
     switch (props.size) {
       case 'small':
@@ -34,6 +34,6 @@ export const Button = styled.button<ButtonProps>`
   }};
   margin: 1em;
   padding: 0.25em 1em;
-  border: 2px solid ${colors.red};
+  border: 2px solid ${brandColors.giv[600]};
   border-radius: 3px;
 `;
