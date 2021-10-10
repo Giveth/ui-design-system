@@ -1,0 +1,56 @@
+import React from "react";
+import { FC } from "react";
+import styled from "styled-components";
+import { brandColors, neutralColors } from "../../common/colors";
+import { ButtonText } from "../typography/ButtonText";
+
+interface IButtonProps {
+  buttonType?: 'primary' | 'secondary';
+  size?: 'small' | 'medium' | 'large';
+  disabled?: boolean;
+  label?: string
+}
+
+const ButtonContainer = styled.button<IButtonProps>`
+  border: 2px solid;
+  border-radius: 48px;
+  padding: 14px 22px;
+  cursor: pointer;
+  transition: color .3s ease, border-color .3s ease, background .3s ease;
+  background: unset;
+  ${props => {
+    switch (props.buttonType) {
+        case 'primary':
+            return props.disabled ? `color: ${brandColors.giv[500]};border-color: ${brandColors.giv[500]};` :`color: ${brandColors.pinky[400]};border-color: ${brandColors.pinky[400]};`
+        case 'secondary':
+            return props.disabled ? `color: ${brandColors.giv[500]};border-color: ${brandColors.giv[500]};` :`color: ${brandColors.giv['000']};border-color: ${brandColors.giv['000']};`
+        default:
+            break;
+    }
+  }}
+  :hover {
+    ${props => {
+      if (props.disabled) return '';
+      switch (props.buttonType) {
+          case 'primary':
+              return `color: ${brandColors.pinky[500]};border-color: ${brandColors.pinky[500]};`
+          case 'secondary':
+              return `color: ${brandColors.giv[500]};background: ${brandColors.giv['000']};`
+          default:
+              break;
+      }
+    }}
+  }
+`;
+
+
+
+export const OulineButton: FC<IButtonProps> = ({label, size = 'medium', buttonType= 'secondary', disabled = false }) => {
+  return (
+    <ButtonContainer buttonType={buttonType} disabled={disabled}>
+      <ButtonText size={size}>
+        {label}
+      </ButtonText>
+    </ButtonContainer>
+  );
+}
