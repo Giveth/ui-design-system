@@ -20,4 +20,5 @@ export * from "./typography/headlines/H4";
 export * from "./typography/headlines/H5";
 export * from "./typography/headlines/H6";
 
-export * from "./Button";
+export * from "./buttons/Button";
+export * from "./buttons/OulineButton";
