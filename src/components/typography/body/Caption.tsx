@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { brandColors } from "../../../common/colors";
 
 export interface ICaptionProps {
     medium?: boolean;
@@ -12,5 +11,4 @@ export const Caption = styled.div<ICaptionProps>`
     font-weight: ${props => props.medium ? 500 : 400};
     font-size: 14px;
     line-height: 150%;
-    color: ${brandColors.deep[900]};
 `;

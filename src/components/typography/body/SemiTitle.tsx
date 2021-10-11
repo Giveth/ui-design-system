@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { brandColors } from "../../../common/colors";
 
 export const SemiTitle = styled.div`
     /* Body/SEMI-TITLE */
@@ -9,5 +8,4 @@ export const SemiTitle = styled.div`
     font-size: 16px;
     line-height: 150%;
     text-transform: uppercase;
-    color: ${brandColors.deep[900]};
 `;

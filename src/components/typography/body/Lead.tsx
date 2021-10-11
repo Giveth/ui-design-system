@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { brandColors } from "../../../common/colors";
 
 export const Lead = styled.div`
     /* Body/Lead */
@@ -8,5 +7,4 @@ export const Lead = styled.div`
     font-weight: normal;
     font-size: 20px;
     line-height: 150%;
-    color: ${brandColors.deep[900]};
 `;

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { brandColors } from "../../common/colors";
 
 export interface IOverlineProps {
     styleType?: 'Small' | 'Regular' | 'Italic';
@@ -20,5 +19,4 @@ export const Overline = styled.a<IOverlineProps>`
                 break;
         }
     }}
-    color: ${brandColors.deep[900]};
 `;
