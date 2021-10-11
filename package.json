@@ -1,5 +1,5 @@
 {
-  "name": "cherik-design-system",
+  "name": "@giveth/ui-design-system",
   "version": "0.1.1",
   "files": [
     "dist"
@@ -9,14 +9,15 @@
     "styled-components": "^5.3.1",
     "@types/styled-components": "^5.1.14"
   },
-  "peerDependencies" : {
+  "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "scripts": {
     "build": "rm -rf dist;tsc",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "prepare": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app",
