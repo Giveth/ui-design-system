@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { brandColors } from "../../../common/colors";
 import { IHeadingProps } from "./common";
 
 export const H6 = styled.h6<IHeadingProps>`
@@ -10,5 +9,4 @@ export const H6 = styled.h6<IHeadingProps>`
     font-size: 18px;
     line-height: 26px;
     letter-spacing: -0.005em;
-    color: ${brandColors.deep[900]};
 `;
