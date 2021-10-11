@@ -20,7 +20,7 @@ export const GLink = styled.a<IGLinkProps>`
             case 'Big':
                 return 'font-size: 16px;line-height: 21px;'
             default:
-                break;
+                return 'font-size: 14px;line-height: 22px;'
         }
     }}
 `;

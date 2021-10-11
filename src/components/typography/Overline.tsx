@@ -16,7 +16,7 @@ export const Overline = styled.a<IOverlineProps>`
             case 'Italic':
                 return 'font-size: 14px;line-height: 19px;font-style: italic;font-weight: normal;'
             default:
-                break;
+                return 'font-size: 14px;line-height: 19px;font-style: normal;font-weight: 500;'
         }
     }}
 `;
