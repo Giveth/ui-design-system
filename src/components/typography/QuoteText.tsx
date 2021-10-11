@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export interface IOverlineProps {
+export interface IQuoteTextProps {
     size?: 'small' | 'medium' | 'large';
 }
 
-export const Overline = styled.a<IOverlineProps>`
-    /* Overline */
+export const QuoteText = styled.a<IQuoteTextProps>`
+    /* QuoteText */
     font-family: Red Hat Text;
     font-weight: normal;
     font-style: normal;
