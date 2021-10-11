@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { brandColors } from "../../common/colors";
 
 export interface IButtonTextProps {
     size?: 'small' | 'medium' | 'large';

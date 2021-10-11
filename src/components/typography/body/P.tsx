@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { brandColors } from "../../../common/colors";
 
 export const P = styled.div`
     /* Body/P */
@@ -8,5 +7,4 @@ export const P = styled.div`
     font-weight: normal;
     font-size: 16px;
     line-height: 150%;
-    color: ${brandColors.deep[900]};
 `;

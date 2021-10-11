@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { brandColors } from "../../../common/colors";
 
 export const D3 = styled.div`
     /* Display/D3 */
@@ -9,5 +8,4 @@ export const D3 = styled.div`
     font-size: 88px;
     line-height: 120%;
     letter-spacing: -0.04em;
-    color: ${brandColors.deep[900]};
 `;

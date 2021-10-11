@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { brandColors } from "../../common/colors";
 
 export interface IGLinkProps {
     size?: 'Tiny' | 'Small' | 'Medium' | 'Big';
@@ -24,6 +23,4 @@ export const GLink = styled.a<IGLinkProps>`
                 break;
         }
     }}
-    
-    color: ${brandColors.deep[900]};
 `;
