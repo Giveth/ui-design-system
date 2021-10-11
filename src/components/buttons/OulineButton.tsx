@@ -1,17 +1,11 @@
 import React from "react";
 import { FC } from "react";
 import styled from "styled-components";
-import { brandColors, neutralColors } from "../../common/colors";
+import { brandColors } from "../../common/colors";
 import { ButtonText } from "../typography/ButtonText";
+import { IButtonContainerProps, IButtonProps } from "./type";
 
-interface IButtonProps {
-  buttonType?: 'primary' | 'secondary';
-  size?: 'small' | 'medium' | 'large';
-  disabled?: boolean;
-  label?: string
-}
-
-const ButtonContainer = styled.button<IButtonProps>`
+const ButtonContainer = styled.button<IButtonContainerProps>`
   border: 2px solid;
   border-radius: 48px;
   padding: 14px 22px;
@@ -25,7 +19,7 @@ const ButtonContainer = styled.button<IButtonProps>`
         case 'secondary':
             return props.disabled ? `color: ${brandColors.giv[500]};border-color: ${brandColors.giv[500]};` :`color: ${brandColors.giv['000']};border-color: ${brandColors.giv['000']};`
         default:
-            break;
+            return props.disabled ? `color: ${brandColors.giv[500]};border-color: ${brandColors.giv[500]};` :`color: ${brandColors.pinky[400]};border-color: ${brandColors.pinky[400]};`
     }
   }}
   :hover {
@@ -37,7 +31,7 @@ const ButtonContainer = styled.button<IButtonProps>`
           case 'secondary':
               return `color: ${brandColors.giv[500]};background: ${brandColors.giv['000']};`
           default:
-              break;
+            return `color: ${brandColors.pinky[500]};border-color: ${brandColors.pinky[500]};`
       }
     }}
   }
