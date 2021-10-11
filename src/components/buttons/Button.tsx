@@ -3,15 +3,9 @@ import { FC } from "react";
 import styled from "styled-components";
 import { brandColors, neutralColors } from "../../common/colors";
 import { ButtonText } from "../typography/ButtonText";
+import { IButtonContainerProps, IButtonProps } from "./type";
 
-interface IButtonProps {
-  buttonType?: 'primary' | 'secondary' | 'texty';
-  size?: 'small' | 'medium' | 'large';
-  disabled?: boolean;
-  label?: string
-}
-
-const ButtonContainer = styled.button<IButtonProps>`
+const ButtonContainer = styled.button<IButtonContainerProps>`
   border: none;
   border-radius: 48px;
   padding: 16px 24px;
@@ -26,7 +20,7 @@ const ButtonContainer = styled.button<IButtonProps>`
         case 'texty':
             return props.disabled ? `color: ${brandColors.giv[500]};background: unset};padding: 8px 24px;` :`color: ${brandColors.deep[100]};background: unset};padding: 8px 24px;`
         default:
-            break;
+            return props.disabled ? `color: ${brandColors.giv[400]};background: ${brandColors.giv[500]};` :`color: ${neutralColors.gray[100]};background: ${brandColors.pinky[500]};`
     }
   }}
   :hover {
@@ -40,7 +34,7 @@ const ButtonContainer = styled.button<IButtonProps>`
           case 'texty':
               return `color: ${brandColors.deep[100]};background: ${brandColors.giv[700]}};`
           default:
-              break;
+              return `color: ${brandColors.deep[100]};background: ${brandColors.giv[700]}};`
       }
     }}
   }
