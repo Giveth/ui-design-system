@@ -1,5 +1,6 @@
 export * from "./typography/GLink";
 export * from "./typography/Overline";
+export * from "./typography/QuoteText";
 export * from "./typography/body/B";
 export * from "./typography/body/Caption";
 export * from "./typography/body/Lead";
