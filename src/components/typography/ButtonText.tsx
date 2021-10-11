@@ -18,7 +18,7 @@ export const ButtonText = styled.a<IButtonTextProps>`
             case 'large':
                 return 'font-size: 16px;line-height: 18px;'
             default:
-                break;
+                return 'font-size: 14px;line-height: 18px;'
         }
     }}    
 `;
