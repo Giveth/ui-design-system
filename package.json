@@ -1,10 +1,10 @@
 {
-  "name": "@giveth/ui-design-system",
-  "version": "1.0.1",
-  "files": [
-    "dist"
-  ],
-  "main": "dist/index.js",
+  "name": "cherik-design-system",
+  "version": "1.0.15",
+  "files": [ "/lib"],
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
   "dependencies": {
     "styled-components": "^5.3.1",
     "@types/styled-components": "^5.1.14"
@@ -14,7 +14,9 @@
     "react-dom": "^17.0.2"
   },
   "scripts": {
-    "build": "rm -rf dist;tsc",
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "prepare": "npm run build"
