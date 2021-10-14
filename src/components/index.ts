@@ -86,3 +86,5 @@ export * from "./social-icons/Reddit"
 export * from "./social-icons/Twitter"
 export * from "./social-icons/Wikipedia"
 export * from "./social-icons/Youtube"
+
+export * from "./DataBlock"
