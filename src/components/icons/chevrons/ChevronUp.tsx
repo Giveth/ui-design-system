@@ -7,11 +7,11 @@ export const IconChevronUp: FC<IIconProps> = ({ size = 16, color='white' }) => {
     </svg>
     
     const size24 = <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M6 15L12 9L18 15" stroke={color} stroke-width="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M6 15L12 9L18 15" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
     
     const size32 = <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M8 20L16 12L24 20" stroke={color} stroke-width="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M8 20L16 12L24 20" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
     
     

@@ -7,11 +7,11 @@ export const IconArrowCircleRight: FC<IIconProps> = ({ size = 16, color='white' 
     </svg>
     
     const size24 = <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 8L16 12M16 12L12 16M16 12H8M2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12Z" stroke={color} stroke-width="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M12 8L16 12M16 12L12 16M16 12H8M2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12Z" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
     
     const size32 = <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M16 10.6666L21.3333 16M21.3333 16L16 21.3333M21.3333 16H10.6666M2.66665 16C2.66665 23.3638 8.63618 29.3333 16 29.3333C23.3638 29.3333 29.3333 23.3638 29.3333 16C29.3333 8.63616 23.3638 2.66663 16 2.66663C8.63618 2.66663 2.66665 8.63616 2.66665 16Z" stroke={color} stroke-width="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M16 10.6666L21.3333 16M21.3333 16L16 21.3333M21.3333 16H10.6666M2.66665 16C2.66665 23.3638 8.63618 29.3333 16 29.3333C23.3638 29.3333 29.3333 23.3638 29.3333 16C29.3333 8.63616 23.3638 2.66663 16 2.66663C8.63618 2.66663 2.66665 8.63616 2.66665 16Z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
     
     switch (size.toString()) {

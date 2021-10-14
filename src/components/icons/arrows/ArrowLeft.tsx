@@ -7,11 +7,11 @@ export const IconArrowLeft: FC<IIconProps> = ({ size = 16, color='white' }) => {
     </svg>
 
     const size24 = <svg width="24" height="24" viewBox="0 0 24 24" fill={color} xmlns="http://www.w3.org/2000/svg">
-        <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke={color} stroke-width="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 
     const size32 = <svg width="32" height="32" viewBox="0 0 32 32" fill={color} xmlns="http://www.w3.org/2000/svg">
-        <path d="M25.3333 16H6.66663M6.66663 16L16 25.3333M6.66663 16L16 6.66663" stroke={color} stroke-width="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M25.3333 16H6.66663M6.66663 16L16 25.3333M6.66663 16L16 6.66663" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 
     switch (size.toString()) {
