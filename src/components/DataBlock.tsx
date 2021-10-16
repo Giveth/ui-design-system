@@ -1,7 +1,7 @@
-import React, { FC, ReactNode } from "react";
+import React, { FC, MouseEventHandler, ReactNode } from "react";
 import styled from "styled-components";
 import { Lead, SemiTitle, H3, Button, Caption } from ".";
-import { brandColors } from "..";
+import { brandColors } from "../common/colors";
 
 interface IDataBlockProps {
     title: string;
@@ -10,14 +10,16 @@ interface IDataBlockProps {
     children: React.ReactNode;
     actionLabel?: string;
     type?: 'primary' | 'secondary' | 'texty';
-    ActionCb?: Function;
+    ActionCb?: MouseEventHandler<HTMLButtonElement>;
     caption?: string;
+    className?: string;
   }
   
   const DataBlockContainer = styled.div``;
   const TitleContainer = styled.div`
     display: flex;
     align-items: center;
+    gap: 8px;
   `;
   
   const DBSubtitle = styled(SemiTitle)`
@@ -38,9 +40,9 @@ interface IDataBlockProps {
     padding: 0 20px;
   `;
   
-  export const DataBlock: FC<IDataBlockProps> = ({ title, icon, subtitle, children, actionLabel, type, ActionCb, caption }) => {
+  export const DataBlock: FC<IDataBlockProps> = ({ title, icon, subtitle, children, actionLabel, type, ActionCb, caption, className }) => {
     return (
-      <DataBlockContainer>
+      <DataBlockContainer className={className}>
         <TitleContainer>
           <H3>{title}</H3>
           {icon && icon}
