@@ -42,9 +42,9 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 
 
 
-export const Button: FC<IButtonProps> = ({label, size = 'medium', buttonType= 'secondary', disabled = false, onClick }) => {
+export const Button: FC<IButtonProps> = ({label, size = 'medium', buttonType= 'secondary', disabled = false, onClick, className }) => {
   return (
-    <ButtonContainer buttonType={buttonType} disabled={disabled} onClick={onClick}>
+    <ButtonContainer buttonType={buttonType} disabled={disabled} onClick={onClick} className={className}>
       <ButtonText size={size}>
         {label}
       </ButtonText>

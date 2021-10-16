@@ -5,6 +5,7 @@ export interface IButtonContainerProps {
     size?: 'small' | 'medium' | 'large';
     disabled?: boolean;
     onClick?: MouseEventHandler<HTMLButtonElement>;
+    className?: string;
 }
 
 export interface IButtonProps extends IButtonContainerProps {
