@@ -1,6 +1,6 @@
 {
   "name": "@giveth/ui-design-system",
-  "version": "1.0.3",
+  "version": "1.2.8",
   "files": [ "/lib"],
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -14,7 +14,7 @@
     "react-dom": "^17.0.2"
   },
   "scripts": {
-    "build": "yarn build:esm && yarn build:cjs",
+    "build": "rm -rf lib;yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs",
     "storybook": "start-storybook -p 6006 -s public",
