@@ -1,18 +1,30 @@
 {
   "name": "@giveth/ui-design-system",
   "version": "1.0.3",
-  "files": [ "/lib"],
+  "files": [
+    "/lib"
+  ],
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
   "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@storybook/components": "^6.3.0",
+    "@storybook/core-events": "^6.3.0",
+    "@storybook/theming": "^6.3.0",
+    "@types/styled-components": "^5.1.14",
+    "babel-loader": "^8.0.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-is": "^16.8.0",
+    "react-refresh": "^0.8.3 ",
+    "react-scripts": "^3.0.0",
     "styled-components": "^5.3.1",
-    "@types/styled-components": "^5.1.14"
+    "webpack": "^5.0.0"
   },
-  "peerDependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
+  "resolutions": {
+  "chokidar": "^3.4.0"
+},
   "scripts": {
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
@@ -61,15 +73,15 @@
     "@storybook/node-logger": "^6.3.9",
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.3.9",
-    "semantic-release": "^18.0.0",
-    "typescript": "^4.1.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0"
+    "@types/react-dom": "^17.0.0",
+    "semantic-release": "^18.0.0",
+    "typescript": "^4.1.2"
   },
   "release": {
     "branches": [
