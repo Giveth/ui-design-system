@@ -1,16 +1,14 @@
-import React, { FC, MouseEventHandler, ReactNode } from "react";
+import React, { FC, ReactNode } from "react";
 import styled from "styled-components";
-import { Lead, SemiTitle, H3, Button, Caption } from ".";
+import { Lead, SemiTitle, H3, Caption } from ".";
 import { brandColors } from "../common/colors";
 
 interface IDataBlockProps {
     title: string;
     subtitle?: string;
     icon?: ReactNode;
-    children: React.ReactNode;
-    actionLabel?: string;
-    type?: 'primary' | 'secondary' | 'texty';
-    ActionCb?: MouseEventHandler<HTMLButtonElement>;
+    children: ReactNode;
+    button?: ReactNode;
     caption?: string;
     className?: string;
   }
@@ -30,17 +28,12 @@ interface IDataBlockProps {
     margin: 24px 0;
   `;
   
-  const DBButton = styled(Button)`
-    display: block;
-    width: 200px;
-  `;
-  
   const DBCaption = styled(Caption)`
     color: ${brandColors.deep[100]};
     padding: 0 20px;
   `;
   
-  export const DataBlock: FC<IDataBlockProps> = ({ title, icon, subtitle, children, actionLabel, type, ActionCb, caption, className }) => {
+  export const DataBlock: FC<IDataBlockProps> = ({ title, icon, subtitle, children, button, caption, className }) => {
     return (
       <DataBlockContainer className={className}>
         <TitleContainer>
@@ -49,7 +42,7 @@ interface IDataBlockProps {
         </TitleContainer>
         {subtitle && <DBSubtitle color={brandColors.deep[100]}>{subtitle}</DBSubtitle>}
         <Body> {children} </Body>
-        {actionLabel && ActionCb && <DBButton label={actionLabel} buttonType={type} onClick={ActionCb} />}
+        {button && button}
         <DBCaption>{caption}</DBCaption>
       </DataBlockContainer>
     );
