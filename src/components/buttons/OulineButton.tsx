@@ -12,6 +12,10 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
   cursor: pointer;
   transition: color .3s ease, border-color .3s ease, background .3s ease;
   background: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
   ${props => {
     switch (props.buttonType) {
         case 'primary':
@@ -39,11 +43,12 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 
 
 
-export const OulineButton: FC<IButtonProps> = ({label, size = 'medium', buttonType= 'secondary', disabled = false, onClick, className }) => {
+export const OulineButton: FC<IButtonProps> = ({label, size = 'medium', buttonType= 'secondary', disabled = false, onClick, icon, className }) => {
   return (
     <ButtonContainer buttonType={buttonType} disabled={disabled} onClick={onClick} className={className}>
       <ButtonText size={size}>
         {label}
+        {icon && icon}
       </ButtonText>
     </ButtonContainer>
   );

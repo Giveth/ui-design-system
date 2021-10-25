@@ -11,6 +11,10 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
   padding: 16px 24px;
   cursor: pointer;
   transition: background .3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
   ${props => {
     switch (props.buttonType) {
         case 'primary':
@@ -40,14 +44,13 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
   }
 `;
 
-
-
-export const Button: FC<IButtonProps> = ({label, size = 'medium', buttonType= 'secondary', disabled = false, onClick, className }) => {
+export const Button: FC<IButtonProps> = ({label, size = 'medium', buttonType= 'secondary', disabled = false, onClick, icon, className }) => {
   return (
     <ButtonContainer buttonType={buttonType} disabled={disabled} onClick={onClick} className={className}>
       <ButtonText size={size}>
         {label}
       </ButtonText>
+      {icon && icon}
     </ButtonContainer>
   );
 }
