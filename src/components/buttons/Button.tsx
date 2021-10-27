@@ -26,7 +26,7 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
             return props.disabled ? `color: ${brandColors.giv[400]};background: ${brandColors.giv[500]};` :`color: ${neutralColors.gray[100]};background: ${brandColors.pinky[500]};`
     }
   }}
-  ${props => props.disabled ? 'cursor: pointer;' : ''}
+  ${props => props.disabled ? '' : 'cursor: pointer;'}
   :hover {
     ${props => {
       if (props.disabled) return '';
