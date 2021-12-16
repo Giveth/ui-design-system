@@ -5,7 +5,7 @@ import { brandColors, neutralColors } from "../../common/colors";
 import { ButtonText } from "../typography/ButtonText";
 import { IButtonLinkContainerProps, IButtonLinkProps } from "./type";
 
-const ButtonContainer = styled.a<IButtonLinkContainerProps>`
+const ButtonLinkContainer = styled.a<IButtonLinkContainerProps>`
   border: none;
   border-radius: 48px;
   padding: 16px 24px;
@@ -44,13 +44,13 @@ const ButtonContainer = styled.a<IButtonLinkContainerProps>`
   }
 `;
 
-export const Button: FC<IButtonLinkProps> = ({label, size = 'medium', linkType= 'secondary', disabled = false, icon, href, className }) => {
+export const ButtonLink: FC<IButtonLinkProps> = ({label, size = 'medium', linkType= 'secondary', disabled = false, icon, href, className }) => {
   return (
-    <ButtonContainer linkType={linkType} disabled={disabled} href={href} className={className}>
+    <ButtonLinkContainer linkType={linkType} disabled={disabled} href={href} className={className}>
       <ButtonText size={size}>
         {label}
       </ButtonText>
       {icon && icon}
-    </ButtonContainer>
+    </ButtonLinkContainer>
   );
 }

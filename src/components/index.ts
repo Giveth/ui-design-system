@@ -24,6 +24,8 @@ export * from "./typography/headlines/H6";
 export * from "./buttons/Button";
 export * from "./buttons/OulineButton";
 
+export * from "./buttonLinks/ButtonLink";
+export * from "./buttonLinks/OulineButtonLink";
 
 export * from "./layout/Container"
 export * from "./layout/ContainerFluid"
