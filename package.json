@@ -1,6 +1,6 @@
 {
   "name": "@giveth/ui-design-system",
-  "version": "1.2.25",
+  "version": "1.2.26",
   "files": [ "/lib"],
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",

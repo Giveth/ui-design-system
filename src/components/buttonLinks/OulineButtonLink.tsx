@@ -43,10 +43,10 @@ const ButtonLinkContainer = styled.a<IButtonLinkContainerProps>`
 
 
 
-export const OulineLinkButton: FC<IButtonLinkProps> = ({label, size = 'medium', linkType= 'secondary', disabled = false, icon, href, className }) => {
+export const OulineLinkButton: FC<IButtonLinkProps> = ({label, size = 'medium', linkType= 'secondary', disabled = false, icon, href, target, className }) => {
   return (
-    <ButtonLinkContainer linkType={linkType} disabled={disabled} href={href} className={className}>
-      <ButtonText size={size}>
+    <ButtonLinkContainer target={target} linkType={linkType} disabled={disabled} href={href} className={className}>
+      <ButtonText as='span' size={size}>
         {label}
         {icon && icon}
       </ButtonText>

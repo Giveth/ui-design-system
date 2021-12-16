@@ -11,4 +11,5 @@ export interface IButtonLinkContainerProps {
 export interface IButtonLinkProps extends IButtonLinkContainerProps {
     label: string
     href?: string;
+    target?: string;
 }
