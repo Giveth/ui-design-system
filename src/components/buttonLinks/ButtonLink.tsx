@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { FC } from "react";
 import styled from "styled-components";
 import { brandColors, neutralColors } from "../../common/colors";
@@ -44,13 +44,13 @@ const ButtonLinkContainer = styled.a<IButtonLinkContainerProps>`
   }
 `;
 
-export const ButtonLink: FC<IButtonLinkProps> = ({label, size = 'medium', linkType= 'secondary', disabled = false, icon, href, target, className }) => {
+export const ButtonLink: FC<IButtonLinkProps> = forwardRef(({label, size = 'medium', linkType= 'secondary', disabled = false, icon, href, target, className }, ref) => {
   return (
-    <ButtonLinkContainer target={target} linkType={linkType} disabled={disabled} href={href} className={className}>
+    <ButtonLinkContainer ref={ref as any} target={target} linkType={linkType} disabled={disabled} href={href} className={className}>
       <ButtonText as='span' size={size}>
         {label}
       </ButtonText>
       {icon && icon}
     </ButtonLinkContainer>
   );
-}
+});
