@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import { IIconProps } from "../type";
 
-export const IconPointerRight: FC<IIconProps> = ({ size = 16, color='white' }) => {
-    const size16 = <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+export const IconPointerRight: FC<IIconProps> = ({ size = 16, color='currentColor' }) => {
+    const size16 = <svg width="17" height={size} viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M1.70001 7.75H16.2M16.2 7.75L12.45 11.5M16.2 7.75L12.45 4" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
     
