@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { IIconProps } from "./type";
 
-export const IconXCircle: FC<IIconProps> = ({ size = 16, color='white' }) => {
+export const IconXCircle: FC<IIconProps> = ({ size = 16, color='currentColor' }) => {
     const size16 = <svg width={size} height={size} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M10 5.99992L6.00004 9.99992M6.00004 5.99992L10 9.99992M14.6667 7.99992C14.6667 11.6818 11.6819 14.6666 8.00004 14.6666C4.31814 14.6666 1.33337 11.6818 1.33337 7.99992C1.33337 4.31802 4.31814 1.33325 8.00004 1.33325C11.6819 1.33325 14.6667 4.31802 14.6667 7.99992Z" stroke={color} strokeLinecap="round" strokeLinejoin="round"/>
     </svg>

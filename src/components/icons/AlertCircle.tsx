@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { IIconProps } from "./type";
 
-export const IconAlertCricle: FC<IIconProps> = ({ size = 16, color='white' }) => {
+export const IconAlertCricle: FC<IIconProps> = ({ size = 16, color='currentColor' }) => {
     const size16 = <svg width={size} height={size} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M7.99998 5.33325V7.99992M7.99998 10.6666H8.00665M14.6666 7.99992C14.6666 11.6818 11.6819 14.6666 7.99998 14.6666C4.31808 14.6666 1.33331 11.6818 1.33331 7.99992C1.33331 4.31802 4.31808 1.33325 7.99998 1.33325C11.6819 1.33325 14.6666 4.31802 14.6666 7.99992Z" stroke={color} strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
