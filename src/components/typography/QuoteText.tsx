@@ -4,7 +4,7 @@ export interface IQuoteTextProps {
     size?: 'small' | 'medium' | 'large';
 }
 
-export const QuoteText = styled.a<IQuoteTextProps>`
+export const QuoteText = styled.div<IQuoteTextProps>`
     /* QuoteText */
     font-family: Red Hat Text;
     font-weight: normal;

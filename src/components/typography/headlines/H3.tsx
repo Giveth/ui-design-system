@@ -8,4 +8,6 @@ export const H3 = styled.h3<IHeadingProps>`
     font-weight: ${props => props.weight || 500};
     font-size: 41px;
     line-height: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
 `;

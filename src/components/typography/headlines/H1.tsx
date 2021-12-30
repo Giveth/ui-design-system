@@ -9,4 +9,6 @@ export const H1 = styled.h1<IHeadingProps>`
     font-size: 66px;
     line-height: 130%;
     letter-spacing: -0.03em;
+    margin-top: 0;
+    margin-bottom: 0;
 `;

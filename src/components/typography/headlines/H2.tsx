@@ -9,4 +9,6 @@ export const H2 = styled.h2<IHeadingProps>`
     font-size: 52px;
     line-height: 76px;
     letter-spacing: -0.02em;
+    margin-top: 0;
+    margin-bottom: 0;
 `;

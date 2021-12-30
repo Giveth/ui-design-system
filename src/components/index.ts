@@ -24,6 +24,8 @@ export * from "./typography/headlines/H6";
 export * from "./buttons/Button";
 export * from "./buttons/OulineButton";
 
+export * from "./buttonLinks/ButtonLink";
+export * from "./buttonLinks/OulineButtonLink";
 
 export * from "./layout/Container"
 export * from "./layout/ContainerFluid"
@@ -47,6 +49,10 @@ export * from "./icons/chevrons/ChevronRight"
 export * from "./icons/chevrons/ChevronUp"
 export * from "./icons/pointers/PointerLeft"
 export * from "./icons/pointers/PointerRight"
+export * from "./icons/giv-economy/Back"
+export * from "./icons/giv-economy/Farm"
+export * from "./icons/giv-economy/Garden"
+export * from "./icons/giv-economy/Stream"
 export * from "./icons/AlertCircle"
 export * from "./icons/AlertTriangle"
 export * from "./icons/Bell"
@@ -86,3 +92,6 @@ export * from "./social-icons/Reddit"
 export * from "./social-icons/Twitter"
 export * from "./social-icons/Wikipedia"
 export * from "./social-icons/Youtube"
+
+export * from "./DataBlock"
+export * from "./DataBox"

@@ -1,11 +1,11 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { FC } from "react";
 import styled from "styled-components";
 import { brandColors, neutralColors } from "../../common/colors";
 import { ButtonText } from "../typography/ButtonText";
-import { IButtonContainerProps, IButtonProps } from "./type";
+import { IButtonLinkContainerProps, IButtonLinkProps } from "./type";
 
-const ButtonContainer = styled.button<IButtonContainerProps>`
+const ButtonLinkContainer = styled.a<IButtonLinkContainerProps>`
   border: none;
   border-radius: 48px;
   padding: 16px 24px;
@@ -15,7 +15,7 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
   align-items: center;
   gap: 4px;
   ${props => {
-    switch (props.buttonType) {
+    switch (props.linkType) {
         case 'primary':
             return props.disabled ? `color: ${brandColors.giv[400]};background: ${brandColors.giv[500]};` :`color: ${neutralColors.gray[100]};background: ${brandColors.pinky[500]};`
         case 'secondary':
@@ -30,7 +30,7 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
   :hover {
     ${props => {
       if (props.disabled) return '';
-      switch (props.buttonType) {
+      switch (props.linkType) {
           case 'primary':
               return `color: ${neutralColors.gray[100]};background: ${brandColors.pinky[600]};`
           case 'secondary':
@@ -44,13 +44,13 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
   }
 `;
 
-export const Button: FC<IButtonProps> = ({label, size = 'medium', buttonType= 'secondary', disabled = false, onClick, icon, className }) => {
+export const ButtonLink: FC<IButtonLinkProps> = forwardRef(({label, size = 'medium', linkType= 'secondary', disabled = false, icon, href, target, className }, ref) => {
   return (
-    <ButtonContainer buttonType={buttonType} disabled={disabled} onClick={onClick} className={className}>
-      <ButtonText size={size}>
+    <ButtonLinkContainer ref={ref as any} target={target} linkType={linkType} disabled={disabled} href={href} className={className}>
+      <ButtonText as='span' size={size}>
         {label}
       </ButtonText>
       {icon && icon}
-    </ButtonContainer>
+    </ButtonLinkContainer>
   );
-}
+});
