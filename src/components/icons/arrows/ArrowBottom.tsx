@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { IIconProps } from "../type";
 
 export const IconArrowBottom: FC<IIconProps> = ({ size = 16, color='white' }) => {
-    const size16 = <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    const size16 = <svg width={size} height={size} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M7.66667 3.00004L7.66667 12.3334M7.66667 12.3334L12.3333 7.66671M7.66667 12.3334L3 7.66671" stroke={color} strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
     

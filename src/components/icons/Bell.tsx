@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { IIconProps } from "./type";
 
 export const IconBell: FC<IIconProps> = ({ size = 16, color='white' }) => {
-    const size16 = <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    const size16 = <svg width={size} height={size} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 5.33331C12 4.27245 11.5786 3.25503 10.8284 2.50489C10.0783 1.75474 9.06087 1.33331 8 1.33331C6.93913 1.33331 5.92172 1.75474 5.17157 2.50489C4.42143 3.25503 4 4.27245 4 5.33331C4 9.99998 2 11.3333 2 11.3333H14C14 11.3333 12 9.99998 12 5.33331Z" fill={color} stroke={color} strokeLinecap="round" strokeLinejoin="round"/>
     <path d="M9.15333 13.3333C9.03612 13.5354 8.86789 13.7031 8.66548 13.8197C8.46307 13.9363 8.23358 13.9976 8 13.9976C7.76641 13.9976 7.53692 13.9363 7.33451 13.8197C7.1321 13.7031 6.96387 13.5354 6.84666 13.3333" stroke={color} strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
