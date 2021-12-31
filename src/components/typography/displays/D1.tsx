@@ -5,7 +5,7 @@ export const D1 = styled.div`
     font-family: TeX Gyre Adventor;
     font-style: normal;
     font-weight: 700;
-    font-size: 107px;
+    font-size: 6.69rem;
     line-height: 130%;
     letter-spacing: -0.04em;
 `;

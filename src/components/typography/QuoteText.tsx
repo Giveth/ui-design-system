@@ -12,13 +12,13 @@ export const QuoteText = styled.div<IQuoteTextProps>`
     ${props => {
         switch (props.size) {
             case 'small':
-                return 'font-size: 24px;line-height: 32px;'
+                return 'font-size: 1.5rem;line-height: normal;'
             case 'medium':
-                return 'font-size: 28px;line-height: 38px;'
+                return 'font-size: 1.75rem;line-height: 134%;'
             case 'large':
-                return 'font-size: 32px;line-height: 42px;'
+                return 'font-size: 2rem;line-height: 134%;'
             default:
-                return 'font-size: 28px;line-height: 38px;'
+                return 'font-size: 1.75rem;line-height: 134%;'
         }
     }}
 `;

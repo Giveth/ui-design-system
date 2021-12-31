@@ -9,6 +9,6 @@ export const Caption = styled.div<ICaptionProps>`
     font-family: Red Hat Text;
     font-style: normal;
     font-weight: ${props => props.medium ? 500 : 400};
-    font-size: 14px;
+    font-size: 0.88rem;
     line-height: 150%;
 `;
