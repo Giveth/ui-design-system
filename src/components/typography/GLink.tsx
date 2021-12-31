@@ -12,15 +12,15 @@ export const GLink = styled.a<IGLinkProps>`
     ${props => {
         switch (props.size) {
             case 'Tiny':
-                return 'font-size: 10px;line-height: 13px;'
+                return 'font-size: 0.63rem;line-height: normal;'
             case 'Small':
-                return 'font-size: 12px;line-height: 16px;'
+                return 'font-size: 0.75rem;line-height: normal;'
             case 'Medium':
-                return 'font-size: 14px;line-height: 22px;'
+                return 'font-size: 0.88rem;line-height: 160%;'
             case 'Big':
-                return 'font-size: 16px;line-height: 21px;'
+                return 'font-size: 1rem;line-height: normal;'
             default:
-                return 'font-size: 14px;line-height: 22px;'
+                return 'font-size: 0.88rem;line-height: 160%;'
         }
     }}
 `;
