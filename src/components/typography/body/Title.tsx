@@ -5,7 +5,7 @@ export const Title = styled.div`
     font-family: 'Red Hat Display';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 2rem;
+    line-height: normal;
     letter-spacing: -0.01em;
 `;
