@@ -5,6 +5,6 @@ export const P = styled.div`
     font-family: Red Hat Text;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 150%;
 `;
