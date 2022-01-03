@@ -14,9 +14,9 @@ export const Overline = styled.a<IOverlineProps>`
             case 'Regular':
                 return 'font-size: 0.88rem;line-height: normal;font-style: normal;font-weight: 500;'
             case 'Italic':
-                return 'font-size: 88rem;line-height: normal;font-style: italic;font-weight: normal;'
+                return 'font-size: 0.88rem;line-height: normal;font-style: italic;font-weight: normal;'
             default:
-                return 'font-size: 88rem;line-height: normal;font-style: normal;font-weight: 500;'
+                return 'font-size: 0.88rem;line-height: normal;font-style: normal;font-weight: 500;'
         }
     }}
 `;
