@@ -30,6 +30,10 @@ export * from "./buttonLinks/OulineButtonLink";
 export * from "./layout/Container"
 export * from "./layout/ContainerFluid"
 
+export * from "./icons/Menu/Menu"
+export * from "./icons/Menu/Menu16"
+export * from "./icons/Menu/Menu24"
+export * from "./icons/Menu/Menu32"
 
 export * from "./icons/arrowCircles/ArrowCircleBottom"
 export * from "./icons/arrowCircles/ArrowCircleLeft"

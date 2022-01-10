@@ -21,7 +21,7 @@ interface IDataBlockProps {
   `;
   
   const DBSubtitle = styled(SemiTitle)`
-    color: ${brandColors.deep[100]}
+    color: ${brandColors.deep[100]};
   `;
   
   const Body = styled(Lead)`
