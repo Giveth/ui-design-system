@@ -5,6 +5,6 @@ export const Lead = styled.div`
     font-family: Red Hat Text;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 150%;
 `;
