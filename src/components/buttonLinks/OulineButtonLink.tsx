@@ -15,6 +15,7 @@ const ButtonLinkContainer = styled.a<IButtonLinkContainerProps>`
   justify-content: center;
   align-items: center;
   gap: 4px;
+  white-space: nowrap;
   ${props => {
     switch (props.linkType) {
         case 'primary':

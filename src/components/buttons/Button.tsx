@@ -14,6 +14,7 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
   justify-content: center;
   align-items: center;
   gap: 4px;
+  white-space: nowrap;
   ${props => {
     switch (props.buttonType) {
         case 'primary':
