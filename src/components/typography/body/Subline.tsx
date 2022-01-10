@@ -5,6 +5,6 @@ export const Subline = styled.div`
     font-family: Red Hat Text;
     font-style: normal;
     font-weight: normal;
-    font-size: 0.75rem;
+    font-size: 12px;
     line-height: 150%;
 `;
