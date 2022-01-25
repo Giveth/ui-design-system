@@ -67,3 +67,4 @@ export const IconHelp: FC<IIconProps> = ({
 			return size16;
 	}
 };
+
