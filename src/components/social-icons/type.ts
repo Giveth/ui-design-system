@@ -1,4 +1,4 @@
 export interface ISocialIconProps {
-    color?: string;
-    size?: 18 | 24;
+	color?: string;
+	size?: 18 | 24;
 }

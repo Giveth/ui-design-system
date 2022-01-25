@@ -1,4 +1,4 @@
 export interface IIconProps {
-    color?: string;
-    size?: 24 | 64;
+	color?: string;
+	size?: 24 | 64;
 }
