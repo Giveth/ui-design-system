@@ -5,8 +5,8 @@
     "plugin:prettier/recommended"  ],
   "rules": {},
   "settings": {
-		"import/resolver": {
-			"typescript": {}
-		}
-	}
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
 }
