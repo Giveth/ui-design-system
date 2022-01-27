@@ -6,9 +6,9 @@ import { ButtonText } from '../typography/ButtonText';
 import { IButtonContainerProps, IButtonProps } from './type';
 
 const ButtonContainer = styled.button<IButtonContainerProps>`
-	border: none;
+	border: 0 solid;
 	border-radius: 48px;
-	padding: 16px 24px;
+	padding: ${ props => props.size === 'large' ? '24px' : '16px'} 24px;
 	transition: background 0.3s ease;
 	display: flex;
 	justify-content: center;
@@ -65,6 +65,7 @@ export const Button: FC<IButtonProps> = ({
 	return (
 		<ButtonContainer
 			buttonType={buttonType}
+			size={size}
 			disabled={disabled}
 			onClick={onClick}
 			className={className}

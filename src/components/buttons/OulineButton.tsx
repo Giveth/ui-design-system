@@ -8,7 +8,7 @@ import { IButtonContainerProps, IButtonProps } from './type';
 const ButtonContainer = styled.button<IButtonContainerProps>`
 	border: 2px solid;
 	border-radius: 48px;
-	padding: 14px 22px;
+	padding: ${ props => props.size === 'large' ? '22px' : '14px'} 24px;
 	transition: color 0.3s ease, border-color 0.3s ease, background 0.3s ease;
 	background: unset;
 	display: flex;
@@ -63,6 +63,7 @@ export const OulineButton: FC<IButtonProps> = ({
 			disabled={disabled}
 			onClick={onClick}
 			className={className}
+			size={size}
 		>
 			<ButtonText size={size}>
 				{label}
