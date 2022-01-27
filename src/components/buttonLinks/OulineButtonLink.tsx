@@ -8,7 +8,7 @@ import { IButtonLinkContainerProps, IButtonLinkProps } from './type';
 const ButtonLinkContainer = styled.a<IButtonLinkContainerProps>`
 	border: 2px solid;
 	border-radius: 48px;
-	padding: 14px 22px;
+	padding: ${ props => props.size === 'large' ? '22px' : '14px'} 24px;
 	transition: color 0.3s ease, border-color 0.3s ease, background 0.3s ease;
 	background: unset;
 	display: flex;
@@ -67,6 +67,7 @@ export const OutlineLinkButton: FC<IButtonLinkProps> = forwardRef(
 				ref={ref as any}
 				target={target}
 				linkType={linkType}
+				size={size}
 				disabled={disabled}
 				href={href}
 				className={className}
