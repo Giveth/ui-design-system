@@ -12,11 +12,11 @@ export const ButtonText = styled.a<IButtonTextProps>`
 	${props => {
 		switch (props.size) {
 			case 'small':
-				return 'font-size: 12px;line-height: 114%;';
+				return 'font-size: 12px;line-height: 16px;';
 			case 'medium':
-				return 'font-size: 14px;line-height: 130%;';
+				return 'font-size: 14px;line-height: 18px;';
 			case 'large':
-				return 'font-size: 16px;line-height: 112%;';
+				return 'font-size: 16px;line-height: 18px;';
 			default:
 				return 'font-size: 14px;line-height: 18px;';
 		}
