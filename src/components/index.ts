@@ -20,6 +20,7 @@ export * from './typography/headlines/H3';
 export * from './typography/headlines/H4';
 export * from './typography/headlines/H5';
 export * from './typography/headlines/H6';
+export * from './typography/ButtonText';
 
 export * from './buttons/Button';
 export * from './buttons/OulineButton';
