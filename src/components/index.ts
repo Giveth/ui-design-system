@@ -41,6 +41,11 @@ export * from './icons/Link/Link16';
 export * from './icons/Link/Link24';
 export * from './icons/Link/Link32';
 
+export * from './icons/Sort/Sort';
+export * from './icons/Sort/Sort16';
+export * from './icons/Sort/Sort24';
+export * from './icons/Sort/Sort32';
+
 export * from './icons/arrowCircles/ArrowCircleBottom';
 export * from './icons/arrowCircles/ArrowCircleLeft';
 export * from './icons/arrowCircles/ArrowCircleRight';
