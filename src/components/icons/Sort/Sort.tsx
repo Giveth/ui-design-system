@@ -4,7 +4,7 @@ import { IconSort16 } from './Sort16';
 import { IconSort24 } from './Sort24';
 import { IconSort32 } from './Sort32';
 
-export const IconMenu: FC<IIconProps> = ({
+export const IconSort: FC<IIconProps> = ({
 	size = 16,
 	color = 'currentColor',
 }) => {
