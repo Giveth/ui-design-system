@@ -36,6 +36,11 @@ export * from './icons/Menu/Menu16';
 export * from './icons/Menu/Menu24';
 export * from './icons/Menu/Menu32';
 
+export * from './icons/Link/Link';
+export * from './icons/Link/Link16';
+export * from './icons/Link/Link24';
+export * from './icons/Link/Link32';
+
 export * from './icons/arrowCircles/ArrowCircleBottom';
 export * from './icons/arrowCircles/ArrowCircleLeft';
 export * from './icons/arrowCircles/ArrowCircleRight';
