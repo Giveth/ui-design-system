@@ -4,7 +4,7 @@ import { IconDocs16 } from './Docs16';
 import { IconDocs24 } from './Docs24';
 import { IconDocs32 } from './Docs32';
 
-export const DocsMenu: FC<ISocialIconProps> = ({
+export const IconDocs: FC<ISocialIconProps> = ({
 	size = 16,
 	color = 'currentColor',
 }) => {
