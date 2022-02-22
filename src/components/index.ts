@@ -106,6 +106,10 @@ export * from './social-icons/Reddit';
 export * from './social-icons/Twitter';
 export * from './social-icons/Wikipedia';
 export * from './social-icons/Youtube';
+export * from './social-icons/Docs/Docs';
+export * from './social-icons/Docs/Docs16';
+export * from './social-icons/Docs/Docs24';
+export * from './social-icons/Docs/Docs32';
 
 export * from './DataBlock';
 export * from './DataBox';
