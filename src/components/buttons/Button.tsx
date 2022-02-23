@@ -8,7 +8,7 @@ import { IButtonContainerProps, IButtonProps } from './type';
 const ButtonContainer = styled.button<IButtonContainerProps>`
 	border: 0 solid;
 	border-radius: 48px;
-	padding: ${ props => props.size === 'large' ? '24px' : '16px'} 24px;
+	padding: ${props => (props.size === 'large' ? '24px' : '16px')} 24px;
 	transition: background 0.3s ease;
 	display: flex;
 	justify-content: center;
