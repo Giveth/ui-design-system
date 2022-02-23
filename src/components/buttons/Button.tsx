@@ -19,19 +19,19 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 		switch (props.buttonType) {
 			case 'primary':
 				return props.disabled
-					? `color: ${brandColors.giv[400]};background: ${brandColors.giv[500]};`
+					? `color: ${brandColors.giv[400]};background: ${brandColors.giv[500]};opacity: 0.4;`
 					: `color: ${neutralColors.gray[100]};background: ${brandColors.pinky[500]};`;
 			case 'secondary':
 				return props.disabled
-					? `color: ${brandColors.giv[400]};background: ${brandColors.giv[500]};`
+					? `color: ${brandColors.giv[400]};background: ${brandColors.giv[500]};opacity: 0.4;`
 					: `color: ${neutralColors.gray[100]};background: ${brandColors.giv[500]};`;
 			case 'texty':
 				return props.disabled
-					? `color: ${brandColors.giv[500]};background: unset};padding: 8px 24px;`
+					? `color: ${brandColors.giv[500]};background: unset};padding: 8px 24px;opacity: 0.4;`
 					: `color: ${brandColors.deep[100]};background: unset};padding: 8px 24px;`;
 			default:
 				return props.disabled
-					? `color: ${brandColors.giv[400]};background: ${brandColors.giv[500]};`
+					? `color: ${brandColors.giv[400]};background: ${brandColors.giv[500]};opacity: 0.4;`
 					: `color: ${neutralColors.gray[100]};background: ${brandColors.pinky[500]};`;
 		}
 	}}
