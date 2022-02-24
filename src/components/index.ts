@@ -31,6 +31,11 @@ export * from './buttonLinks/OulineButtonLink';
 export * from './layout/Container';
 export * from './layout/ContainerFluid';
 
+export * from './icons/Info/Info';
+export * from './icons/Info/Info16';
+export * from './icons/Info/Info24';
+export * from './icons/Info/Info32';
+
 export * from './icons/Menu/Menu';
 export * from './icons/Menu/Menu16';
 export * from './icons/Menu/Menu24';
