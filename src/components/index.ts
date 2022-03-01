@@ -51,6 +51,11 @@ export * from './icons/Sort/Sort16';
 export * from './icons/Sort/Sort24';
 export * from './icons/Sort/Sort32';
 
+export * from './icons/Heart/Heart';
+export * from './icons/Heart/Heart16';
+export * from './icons/Heart/Heart24';
+export * from './icons/Heart/Heart32';
+
 export * from './icons/arrowCircles/ArrowCircleBottom';
 export * from './icons/arrowCircles/ArrowCircleLeft';
 export * from './icons/arrowCircles/ArrowCircleRight';
@@ -87,7 +92,6 @@ export * from './icons/Copy';
 export * from './icons/ExternalLink';
 export * from './icons/Flash';
 export * from './icons/Forward';
-export * from './icons/Heart';
 export * from './icons/HeartOutline';
 export * from './icons/Help';
 export * from './icons/HelpOutline.tsx';
