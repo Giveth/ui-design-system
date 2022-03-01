@@ -61,6 +61,11 @@ export * from './icons/HeartOutline/HeartOutline16';
 export * from './icons/HeartOutline/HeartOutline24';
 export * from './icons/HeartOutline/HeartOutline32';
 
+export * from './icons/Share/Share';
+export * from './icons/Share/Share16';
+export * from './icons/Share/Share24';
+export * from './icons/Share/Share32';
+
 export * from './icons/arrowCircles/ArrowCircleBottom';
 export * from './icons/arrowCircles/ArrowCircleLeft';
 export * from './icons/arrowCircles/ArrowCircleRight';
