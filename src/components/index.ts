@@ -56,6 +56,11 @@ export * from './icons/Heart/Heart16';
 export * from './icons/Heart/Heart24';
 export * from './icons/Heart/Heart32';
 
+export * from './icons/HeartOutline/HeartOutline';
+export * from './icons/HeartOutline/HeartOutline16';
+export * from './icons/HeartOutline/HeartOutline24';
+export * from './icons/HeartOutline/HeartOutline32';
+
 export * from './icons/arrowCircles/ArrowCircleBottom';
 export * from './icons/arrowCircles/ArrowCircleLeft';
 export * from './icons/arrowCircles/ArrowCircleRight';
@@ -92,7 +97,6 @@ export * from './icons/Copy';
 export * from './icons/ExternalLink';
 export * from './icons/Flash';
 export * from './icons/Forward';
-export * from './icons/HeartOutline';
 export * from './icons/Help';
 export * from './icons/HelpOutline.tsx';
 export * from './icons/Search';
