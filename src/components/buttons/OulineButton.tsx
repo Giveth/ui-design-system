@@ -65,10 +65,8 @@ export const OulineButton: FC<IButtonProps> = ({
 			className={className}
 			size={size}
 		>
-			<ButtonText size={size}>
-				{label}
-				{icon && icon}
-			</ButtonText>
+			<ButtonText size={size}>{label}</ButtonText>
+			{icon && icon}
 		</ButtonContainer>
 	);
 };
