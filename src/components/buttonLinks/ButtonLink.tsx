@@ -8,8 +8,8 @@ import { IButtonLinkContainerProps, IButtonLinkProps } from './type';
 const ButtonLinkContainer = styled.a<IButtonLinkContainerProps>`
 	border: none;
 	border-radius: 48px;
-	padding: ${ props => props.size === 'large' ? '24px' : '16px'} 24px;
-	transition: background 0.3s ease;
+	padding: ${props => (props.size === 'large' ? '24px' : '16px')} 24px;
+	transition: background-color 0.3s ease;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -19,20 +19,20 @@ const ButtonLinkContainer = styled.a<IButtonLinkContainerProps>`
 		switch (props.linkType) {
 			case 'primary':
 				return props.disabled
-					? `color: ${brandColors.giv[400]};background: ${brandColors.giv[500]};`
-					: `color: ${neutralColors.gray[100]};background: ${brandColors.pinky[500]};`;
+					? `color: ${brandColors.giv[400]};background-color: ${brandColors.giv[500]};`
+					: `color: ${neutralColors.gray[100]};background-color: ${brandColors.pinky[500]};`;
 			case 'secondary':
 				return props.disabled
-					? `color: ${brandColors.giv[400]};background: ${brandColors.giv[500]};`
-					: `color: ${neutralColors.gray[100]};background: ${brandColors.giv[500]};`;
+					? `color: ${brandColors.giv[400]};background-color: ${brandColors.giv[500]};`
+					: `color: ${neutralColors.gray[100]};background-color: ${brandColors.giv[500]};`;
 			case 'texty':
 				return props.disabled
-					? `color: ${brandColors.giv[500]};background: unset};padding: 8px 24px;`
-					: `color: ${brandColors.deep[100]};background: unset};padding: 8px 24px;`;
+					? `color: ${brandColors.giv[500]};background-color: unset};padding: 8px 24px;`
+					: `color: ${brandColors.deep[100]};background-color: unset};padding: 8px 24px;`;
 			default:
 				return props.disabled
-					? `color: ${brandColors.giv[400]};background: ${brandColors.giv[500]};`
-					: `color: ${neutralColors.gray[100]};background: ${brandColors.pinky[500]};`;
+					? `color: ${brandColors.giv[400]};background-color: ${brandColors.giv[500]};`
+					: `color: ${neutralColors.gray[100]};background-color: ${brandColors.pinky[500]};`;
 		}
 	}}
 	${props => (props.disabled ? '' : 'cursor: pointer;')}
@@ -41,13 +41,13 @@ const ButtonLinkContainer = styled.a<IButtonLinkContainerProps>`
 			if (props.disabled) return '';
 			switch (props.linkType) {
 				case 'primary':
-					return `color: ${neutralColors.gray[100]};background: ${brandColors.pinky[600]};`;
+					return `color: ${neutralColors.gray[100]};background-color: ${brandColors.pinky[600]};`;
 				case 'secondary':
-					return `color: ${neutralColors.gray[100]};background: ${brandColors.giv[700]};`;
+					return `color: ${neutralColors.gray[100]};background-color: ${brandColors.giv[700]};`;
 				case 'texty':
-					return `color: ${brandColors.deep[100]};background: ${brandColors.giv[700]}};`;
+					return `color: ${brandColors.deep[100]};background-color: ${brandColors.giv[700]}};`;
 				default:
-					return `color: ${brandColors.deep[100]};background: ${brandColors.giv[700]}};`;
+					return `color: ${brandColors.deep[100]};background-color: ${brandColors.giv[700]}};`;
 			}
 		}}
 	}
@@ -61,20 +61,22 @@ export const ButtonLink: FC<IButtonLinkProps> = forwardRef(
 			linkType = 'secondary',
 			disabled = false,
 			icon,
-			href,
 			target,
 			className,
+			href,
+			onClick,
 		},
 		ref,
 	) => {
 		return (
 			<ButtonLinkContainer
 				ref={ref as any}
+				href={href}
+				onClick={onClick}
 				target={target}
 				linkType={linkType}
 				disabled={disabled}
 				size={size}
-				href={href}
 				className={className}
 			>
 				<ButtonText as='span' size={size}>
