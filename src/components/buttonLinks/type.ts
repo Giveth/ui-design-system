@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { MouseEventHandler, ReactNode } from 'react';
 
 export interface IButtonLinkContainerProps {
 	linkType?: 'primary' | 'secondary' | 'texty';
@@ -6,6 +6,7 @@ export interface IButtonLinkContainerProps {
 	disabled?: boolean;
 	icon?: ReactNode;
 	className?: string;
+	onClick?: MouseEventHandler<HTMLAnchorElement>;
 }
 
 export interface IButtonLinkProps extends IButtonLinkContainerProps {

@@ -8,9 +8,10 @@ import { IButtonLinkContainerProps, IButtonLinkProps } from './type';
 const ButtonLinkContainer = styled.a<IButtonLinkContainerProps>`
 	border: 2px solid;
 	border-radius: 48px;
-	padding: ${ props => props.size === 'large' ? '22px' : '14px'} 24px;
-	transition: color 0.3s ease, border-color 0.3s ease, background 0.3s ease;
-	background: unset;
+	padding: ${props => (props.size === 'large' ? '22px' : '14px')} 24px;
+	transition: color 0.3s ease, border-color 0.3s ease,
+		background-color 0.3s ease;
+	background-color: unset;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -40,7 +41,7 @@ const ButtonLinkContainer = styled.a<IButtonLinkContainerProps>`
 				case 'primary':
 					return `color: ${brandColors.pinky[500]};border-color: ${brandColors.pinky[500]};`;
 				case 'secondary':
-					return `color: ${brandColors.giv[500]};background: ${brandColors.giv['000']};`;
+					return `color: ${brandColors.giv[500]};background-color: ${brandColors.giv['000']};`;
 				default:
 					return `color: ${brandColors.pinky[500]};border-color: ${brandColors.pinky[500]};`;
 			}
@@ -59,17 +60,19 @@ export const OutlineLinkButton: FC<IButtonLinkProps> = forwardRef(
 			href,
 			target,
 			className,
+			onClick,
 		},
 		ref,
 	) => {
 		return (
 			<ButtonLinkContainer
 				ref={ref as any}
+				href={href}
+				onClick={onClick}
 				target={target}
 				linkType={linkType}
 				size={size}
 				disabled={disabled}
-				href={href}
 				className={className}
 			>
 				<ButtonText as='span' size={size}>
