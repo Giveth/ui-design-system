@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { IconArrowRight } from '../../../components/icons/arrows/ArrowRight';
 
 export default {
-	title: 'Example/Icons/Arrow',
+	title: 'Example/Icons/Navigation/Arrow',
 	component: IconArrowRight,
 } as ComponentMeta<typeof IconArrowRight>;
 
