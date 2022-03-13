@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
-import { IIconProps } from './type';
+import { IIconProps } from '../icons/giv-economy/type';
 
 export const IconGnosisChain: FC<IIconProps> = ({ size = 16 }) => {
 	const size16 = (
 		<svg
-			width={size}
-			height={size}
+			width='16'
+			height='16'
 			viewBox='0 0 16 16'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
