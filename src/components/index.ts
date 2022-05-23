@@ -66,6 +66,31 @@ export * from './icons/Share/Share16';
 export * from './icons/Share/Share24';
 export * from './icons/Share/Share32';
 
+export * from './icons/AutoBoost/AutoBoost';
+export * from './icons/AutoBoost/AutoBoost16';
+export * from './icons/AutoBoost/AutoBoost24';
+export * from './icons/AutoBoost/AutoBoost32';
+
+export * from './icons/DelegateBoost/DelegateBoost';
+export * from './icons/DelegateBoost/DelegateBoost16';
+export * from './icons/DelegateBoost/DelegateBoost24';
+export * from './icons/DelegateBoost/DelegateBoost32';
+
+export * from './icons/Lock/Lock';
+export * from './icons/Lock/Lock16';
+export * from './icons/Lock/Lock24';
+export * from './icons/Lock/Lock32';
+
+export * from './icons/Unlock/Unlock';
+export * from './icons/Unlock/Unlock16';
+export * from './icons/Unlock/Unlock24';
+export * from './icons/Unlock/Unlock32';
+
+export * from './icons/RocketInSpace/RocketInSpace';
+export * from './icons/RocketInSpace/RocketInSpace16';
+export * from './icons/RocketInSpace/RocketInSpace24';
+export * from './icons/RocketInSpace/RocketInSpace32';
+
 export * from './icons/arrowCircles/ArrowCircleBottom';
 export * from './icons/arrowCircles/ArrowCircleLeft';
 export * from './icons/arrowCircles/ArrowCircleRight';
