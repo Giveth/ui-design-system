@@ -148,6 +148,7 @@ export * from './social-icons/Medium';
 export * from './social-icons/Reddit';
 export * from './social-icons/Twitter';
 export * from './social-icons/Facebook';
+export * from './social-icons/Linkedin';
 export * from './social-icons/Wikipedia';
 export * from './social-icons/Youtube';
 export * from './social-icons/Docs/Docs';
