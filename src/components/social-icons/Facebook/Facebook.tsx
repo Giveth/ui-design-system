@@ -4,7 +4,7 @@ import { IconFacebook18 } from './Facebook18';
 import { IconFacebook24 } from './Facebook24';
 
 export const IconFacebook: FC<ISocialIconProps> = ({
-	size = 16,
+	size = 18,
 	color = 'currentColor',
 }) => {
 	switch (size.toString()) {
