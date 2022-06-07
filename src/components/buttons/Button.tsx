@@ -63,6 +63,8 @@ const LoadingContainer = styled.div<{ loading: boolean }>`
 const Loader = styled.div<IButtonContainerProps>`
 	border: 3px solid
 		${props => {
+			if (props.disabled) return brandColors.giv[600];
+
 			switch (props.buttonType) {
 				case 'primary':
 					return brandColors.pinky[600];
@@ -103,7 +105,9 @@ export const Button: FC<IButtonProps> = ({
 			className={className}
 		>
 			<LoadingContainer loading={loading}>
-				{loading && <Loader buttonType={buttonType} />}
+				{loading && (
+					<Loader buttonType={buttonType} disabled={disabled} />
+				)}
 			</LoadingContainer>
 			<ButtonText size={size}>{label}</ButtonText>
 			{icon && icon}
