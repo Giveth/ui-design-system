@@ -18,6 +18,7 @@ Primary.args = {
 	label: 'Primary',
 	size: 'medium',
 	disabled: false,
+	loading: false,
 };
 
 export const Secondary = Template.bind({});
@@ -26,6 +27,7 @@ Secondary.args = {
 	label: 'Secondary',
 	size: 'medium',
 	disabled: false,
+	loading: false,
 };
 
 export const Texty = Template.bind({});
@@ -34,4 +36,5 @@ Texty.args = {
 	label: 'Texty',
 	size: 'medium',
 	disabled: false,
+	loading: false,
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import { FC } from 'react';
 import styled from 'styled-components';
 import { brandColors, neutralColors } from '../../common/colors';
+import { rotate } from '../../styled-components/animations';
 import { ButtonText } from '../typography/ButtonText';
 import { IButtonContainerProps, IButtonProps } from './type';
 
@@ -53,11 +54,42 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 	}
 `;
 
+const LoadingContainer = styled.div<{ loading: boolean }>`
+	position: relative;
+	transition: width 0.3s ease;
+	width: ${props => (props.loading ? '16px' : 0)};
+`;
+
+const Loader = styled.div<IButtonContainerProps>`
+	border: 3px solid
+		${props => {
+			switch (props.buttonType) {
+				case 'primary':
+					return brandColors.pinky[600];
+				case 'secondary':
+					return brandColors.giv[600];
+				case 'texty':
+					return brandColors.giv[500];
+				default:
+					return brandColors.giv[500];
+			}
+		}};
+	border-radius: 50%;
+	border-top: 3px solid white;
+	width: 12px;
+	height: 12px;
+	animation: ${rotate} 1s ease infinite;
+	position: absolute;
+	top: -8px;
+	left: -8px;
+`;
+
 export const Button: FC<IButtonProps> = ({
 	label,
 	size = 'medium',
 	buttonType = 'secondary',
 	disabled = false,
+	loading = false,
 	onClick,
 	icon,
 	className,
@@ -70,6 +102,9 @@ export const Button: FC<IButtonProps> = ({
 			onClick={onClick}
 			className={className}
 		>
+			<LoadingContainer loading={loading}>
+				{loading && <Loader buttonType={buttonType} />}
+			</LoadingContainer>
 			<ButtonText size={size}>{label}</ButtonText>
 			{icon && icon}
 		</ButtonContainer>
