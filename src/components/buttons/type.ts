@@ -4,6 +4,7 @@ export interface IButtonContainerProps {
 	buttonType?: 'primary' | 'secondary' | 'texty';
 	size?: 'small' | 'medium' | 'large';
 	disabled?: boolean;
+	loading?: boolean;
 	onClick?: MouseEventHandler<HTMLButtonElement>;
 	icon?: ReactNode;
 	className?: string;
