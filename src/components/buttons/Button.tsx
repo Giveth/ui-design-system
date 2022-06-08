@@ -52,7 +52,7 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 	}
 `;
 
-const LoadingContainer = styled.div<{ loading: boolean }>`
+const LoadingContainer = styled.div<{ loading: number }>`
 	position: relative;
 	transition: width 0.3s ease;
 	width: ${props => (props.loading ? '16px' : 0)};
@@ -102,7 +102,7 @@ export const Button: FC<IButtonProps> = ({
 			onClick={onClick}
 			className={className}
 		>
-			<LoadingContainer loading={loading}>
+			<LoadingContainer loading={+loading}>
 				{loading && (
 					<Loader buttonType={buttonType} disabled={disabled} />
 				)}
