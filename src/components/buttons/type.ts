@@ -10,5 +10,6 @@ export interface IButtonContainerProps {
 }
 
 export interface IButtonProps extends IButtonContainerProps {
+	loading?: boolean;
 	label: string;
 }
