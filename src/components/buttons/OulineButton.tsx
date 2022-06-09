@@ -56,6 +56,7 @@ export const OulineButton: FC<IButtonProps> = ({
 	onClick,
 	icon,
 	className,
+	type = 'button',
 }) => {
 	return (
 		<ButtonContainer
@@ -64,6 +65,7 @@ export const OulineButton: FC<IButtonProps> = ({
 			onClick={onClick}
 			className={className}
 			size={size}
+			type={type}
 		>
 			<ButtonText size={size}>{label}</ButtonText>
 			{icon && icon}

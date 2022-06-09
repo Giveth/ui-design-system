@@ -93,6 +93,7 @@ export const Button: FC<IButtonProps> = ({
 	onClick,
 	icon,
 	className,
+	type = 'button',
 }) => {
 	return (
 		<ButtonContainer
@@ -101,6 +102,7 @@ export const Button: FC<IButtonProps> = ({
 			disabled={disabled}
 			onClick={onClick}
 			className={className}
+			type={type}
 		>
 			<LoadingContainer loading={+loading}>
 				{loading && (
