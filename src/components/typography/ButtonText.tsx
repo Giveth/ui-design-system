@@ -5,9 +5,9 @@ export interface IButtonTextProps {
 }
 
 export const ButtonText = styled.a<IButtonTextProps>`
-	/* Link/Tiny */
 	font-family: Red Hat Text;
 	font-style: normal;
+	text-transform: uppercase;
 	font-weight: 700;
 	${props => {
 		switch (props.size) {
