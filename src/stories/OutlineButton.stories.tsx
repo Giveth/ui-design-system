@@ -18,6 +18,7 @@ OulinePrimary.args = {
 	label: 'Ouline Primary',
 	size: 'medium',
 	disabled: false,
+	loading: false,
 };
 
 export const OulineSecondary = Template.bind({});
@@ -26,4 +27,5 @@ OulineSecondary.args = {
 	label: 'Ouline Secondary',
 	size: 'medium',
 	disabled: false,
+	loading: false,
 };
