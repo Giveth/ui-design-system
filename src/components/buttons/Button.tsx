@@ -2,7 +2,6 @@ import React from 'react';
 import { FC } from 'react';
 import styled from 'styled-components';
 import { brandColors, neutralColors } from '../../common/colors';
-import { rotate } from '../../styled-components/animations';
 import { ButtonText } from '../typography/ButtonText';
 import { Loader, LoadingContainer } from './common';
 import { IButtonContainerProps, IButtonProps } from './type';
