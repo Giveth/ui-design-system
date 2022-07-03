@@ -3,6 +3,7 @@ import { FC } from 'react';
 import styled from 'styled-components';
 import { brandColors } from '../../common/colors';
 import { ButtonText } from '../typography/ButtonText';
+import { Loader, LoadingContainer } from './common';
 import { IButtonContainerProps, IButtonProps } from './type';
 
 const ButtonContainer = styled.button<IButtonContainerProps>`
@@ -53,6 +54,7 @@ export const OulineButton: FC<IButtonProps> = ({
 	size = 'medium',
 	buttonType = 'secondary',
 	disabled = false,
+	loading = false,
 	onClick,
 	icon,
 	className,
@@ -67,6 +69,11 @@ export const OulineButton: FC<IButtonProps> = ({
 			size={size}
 			type={type}
 		>
+			<LoadingContainer loading={+loading}>
+				{loading && (
+					<Loader buttonType={buttonType} disabled={disabled} />
+				)}
+			</LoadingContainer>
 			<ButtonText size={size}>{label}</ButtonText>
 			{icon && icon}
 		</ButtonContainer>
