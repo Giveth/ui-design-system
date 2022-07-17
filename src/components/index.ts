@@ -91,6 +91,11 @@ export * from './icons/RocketInSpace/RocketInSpace16';
 export * from './icons/RocketInSpace/RocketInSpace24';
 export * from './icons/RocketInSpace/RocketInSpace32';
 
+export * from './icons/Options/Options';
+export * from './icons/Options/Options16';
+export * from './icons/Options/Options24';
+export * from './icons/Options/Options32';
+
 export * from './icons/arrowCircles/ArrowCircleBottom';
 export * from './icons/arrowCircles/ArrowCircleLeft';
 export * from './icons/arrowCircles/ArrowCircleRight';
