@@ -96,6 +96,11 @@ export * from './icons/Options/Options16';
 export * from './icons/Options/Options24';
 export * from './icons/Options/Options32';
 
+export * from './icons/Dots/Dots';
+export * from './icons/Dots/Dots16';
+export * from './icons/Dots/Dots24';
+export * from './icons/Dots/Dots32';
+
 export * from './icons/arrowCircles/ArrowCircleBottom';
 export * from './icons/arrowCircles/ArrowCircleLeft';
 export * from './icons/arrowCircles/ArrowCircleRight';
