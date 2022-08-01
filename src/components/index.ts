@@ -51,6 +51,11 @@ export * from './icons/Sort/Sort16';
 export * from './icons/Sort/Sort24';
 export * from './icons/Sort/Sort32';
 
+export * from './icons/Donation/Donation';
+export * from './icons/Donation/Donation16';
+export * from './icons/Donation/Donation24';
+export * from './icons/Donation/Donation32';
+
 export * from './icons/Heart/Heart';
 export * from './icons/Heart/Heart16';
 export * from './icons/Heart/Heart24';
