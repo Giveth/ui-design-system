@@ -25,7 +25,6 @@ export const IconDonation16: FC<IIconProps> = ({
 			<g clipPath='url(#clip1_11069_199804)'>
 				<path
 					d='M10.1394 3.10486C10.1394 2.02637 9.2644 1.15137 8.18591 1.15137C7.10742 1.15137 6.23242 2.02637 6.23242 3.10486C6.23242 4.18334 7.10742 5.05834 8.18591 5.05834C9.2644 5.05834 10.1394 4.18334 10.1394 3.10486Z'
-					fill='white'
 					stroke={color}
 					strokeWidth='0.75'
 					strokeMiterlimit='10'
