@@ -110,24 +110,31 @@ export * from './icons/arrowCircles/ArrowCircleBottom';
 export * from './icons/arrowCircles/ArrowCircleLeft';
 export * from './icons/arrowCircles/ArrowCircleRight';
 export * from './icons/arrowCircles/ArrowCircleTop';
+
 export * from './icons/arrows/ArrowBottom';
 export * from './icons/arrows/ArrowLeft';
 export * from './icons/arrows/ArrowRight';
 export * from './icons/arrows/ArrowTop';
+
 export * from './icons/carets/CaretDown';
 export * from './icons/carets/CaretLeft';
 export * from './icons/carets/CaretRight';
 export * from './icons/carets/CaretUp';
+
 export * from './icons/chevrons/ChevronDown';
 export * from './icons/chevrons/ChevronLeft';
 export * from './icons/chevrons/ChevronRight';
 export * from './icons/chevrons/ChevronUp';
+
 export * from './icons/pointers/PointerLeft';
 export * from './icons/pointers/PointerRight';
+
 export * from './icons/giv-economy/Back';
 export * from './icons/giv-economy/Farm';
 export * from './icons/giv-economy/Garden';
 export * from './icons/giv-economy/Stream';
+
+export * from './icons/Archiving';
 export * from './icons/AlertCircle';
 export * from './icons/AlertTriangle';
 export * from './icons/Bell';
