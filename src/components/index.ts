@@ -24,6 +24,7 @@ export * from './typography/ButtonText';
 
 export * from './buttons/Button';
 export * from './buttons/OulineButton';
+export * from './buttons/type';
 
 export * from './buttonLinks/ButtonLink';
 export * from './buttonLinks/OulineButtonLink';
@@ -172,6 +173,7 @@ export * from './icons/Overview';
 export * from './icons/GasStation';
 export * from './icons/Fund';
 export * from './icons/AlertTriangleOutline';
+export * from './icons/type';
 
 export * from './currency-icons/ETH';
 export * from './currency-icons/Giveth';
