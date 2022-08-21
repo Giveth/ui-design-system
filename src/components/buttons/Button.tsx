@@ -21,6 +21,9 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 			if (props.buttonType === 'texty') {
 				return `color: ${brandColors.giv[500]};background: unset};padding: 8px 24px;opacity: 0.5;`;
 			}
+			if (props.buttonType === 'primary') {
+				return `background: ${brandColors.pinky[300]};color: ${brandColors.pinky[200]};`;
+			}
 			return `color: ${brandColors.giv[400]};background: ${brandColors.giv[500]};opacity: 0.5;`;
 		}
 		switch (props.buttonType) {
