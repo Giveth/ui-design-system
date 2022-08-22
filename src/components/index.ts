@@ -107,6 +107,16 @@ export * from './icons/Dots/Dots16';
 export * from './icons/Dots/Dots24';
 export * from './icons/Dots/Dots32';
 
+export * from './icons/Notification/Notification';
+export * from './icons/Notification/Notification16';
+export * from './icons/Notification/Notification24';
+export * from './icons/Notification/Notification32';
+
+export * from './icons/NotificationOutline/NotificationOutline';
+export * from './icons/NotificationOutline/NotificationOutline16';
+export * from './icons/NotificationOutline/NotificationOutline24';
+export * from './icons/NotificationOutline/NotificationOutline32';
+
 export * from './icons/arrowCircles/ArrowCircleBottom';
 export * from './icons/arrowCircles/ArrowCircleLeft';
 export * from './icons/arrowCircles/ArrowCircleRight';
