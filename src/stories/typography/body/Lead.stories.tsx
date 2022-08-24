@@ -13,4 +13,12 @@ const Template: ComponentStory<typeof Lead> = args => (
 	</Lead>
 );
 
-export const Example = Template.bind({});
+export const Medium = Template.bind({});
+Medium.args = {
+	size: 'medium',
+};
+
+export const Large = Template.bind({});
+Large.args = {
+	size: 'large',
+};
