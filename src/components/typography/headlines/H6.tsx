@@ -6,7 +6,7 @@ export const H6 = styled.h6<IHeadingProps>`
 	font-family: TeX Gyre Adventor;
 	font-style: normal;
 	font-weight: ${props => props.weight || 500};
-	font-size: 18px;
+	font-size: 1.13rem;
 	line-height: normal;
 	letter-spacing: -0.005em;
 	margin-top: 0;
