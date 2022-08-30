@@ -21,7 +21,7 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 		switch (props.buttonType) {
 			case 'primary':
 				return props.disabled
-					? `color: ${brandColors.giv[500]};border-color: ${brandColors.giv[500]};opacity: 0.4;`
+					? `color: ${brandColors.pinky[300]};border-color: ${brandColors.pinky[300]};`
 					: `color: ${brandColors.pinky[400]};border-color: ${brandColors.pinky[400]};`;
 			case 'secondary':
 				return props.disabled

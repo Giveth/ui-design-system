@@ -12,8 +12,12 @@ export const LoadingContainer = styled.div<{ loading: number }>`
 export const Loader = styled.div<IButtonContainerProps>`
 	border: 3px solid
 		${props => {
-			if (props.disabled) return brandColors.giv[600];
-
+			if (props.disabled) {
+				switch (props.buttonType) {
+					case 'primary':
+						return brandColors.pinky[400];
+				}
+			}
 			switch (props.buttonType) {
 				case 'primary':
 					return brandColors.pinky[600];
