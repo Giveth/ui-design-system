@@ -49,7 +49,7 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 	}
 `;
 
-export const OulineButton: FC<IButtonProps> = ({
+export const OutlineButton: FC<IButtonProps> = ({
 	label,
 	size = 'medium',
 	buttonType = 'secondary',
