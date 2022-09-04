@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { OutlineLinkButton } from '../components/buttonLinks/OulineButtonLink';
+import { OutlineLinkButton } from '../components/buttonLinks/OutlineButtonLink';
 
 export default {
 	title: 'Example/ButtonLink',
@@ -12,18 +12,18 @@ const Template: ComponentStory<typeof OutlineLinkButton> = args => (
 	<OutlineLinkButton {...args}>{args.label}</OutlineLinkButton>
 );
 
-export const OulinePrimary = Template.bind({});
-OulinePrimary.args = {
+export const OutlinePrimary = Template.bind({});
+OutlinePrimary.args = {
 	buttonType: 'primary',
-	label: 'Ouline Primary',
+	label: 'Outline Primary',
 	size: 'medium',
 	disabled: false,
 };
 
-export const OulineSecondary = Template.bind({});
-OulineSecondary.args = {
+export const OutlineSecondary = Template.bind({});
+OutlineSecondary.args = {
 	buttonType: 'secondary',
-	label: 'Ouline Secondary',
+	label: 'Outline Secondary',
 	size: 'medium',
 	disabled: false,
 };

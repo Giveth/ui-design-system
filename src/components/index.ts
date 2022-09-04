@@ -23,11 +23,11 @@ export * from './typography/headlines/H6';
 export * from './typography/ButtonText';
 
 export * from './buttons/Button';
-export * from './buttons/OulineButton';
+export * from './buttons/OutlineButton';
 export * from './buttons/type';
 
 export * from './buttonLinks/ButtonLink';
-export * from './buttonLinks/OulineButtonLink';
+export * from './buttonLinks/OutlineButtonLink';
 
 export * from './layout/Container';
 export * from './layout/ContainerFluid';
