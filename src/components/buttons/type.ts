@@ -1,7 +1,12 @@
 import { MouseEventHandler, ReactNode } from 'react';
 
 export interface IButtonContainerProps {
-	buttonType?: 'primary' | 'secondary' | 'texty';
+	buttonType?:
+		| 'primary'
+		| 'secondary'
+		| 'texty'
+		| 'texty-primary'
+		| 'texty-secondary';
 	size?: 'small' | 'medium' | 'large';
 	disabled?: boolean;
 	onClick?: MouseEventHandler<HTMLButtonElement>;
