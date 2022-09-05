@@ -17,6 +17,7 @@ Primary.args = {
 	label: 'Primary',
 	size: 'medium',
 	disabled: false,
+	href: '/test',
 };
 
 export const Secondary = Template.bind({});
