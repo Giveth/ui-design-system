@@ -1,6 +1,6 @@
 import React from 'react';
 import { FC } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { brandColors } from '../../common/colors';
 import { ButtonText } from '../typography/ButtonText';
 import { Loader, LoadingContainer } from './common';
@@ -10,7 +10,8 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 	border: 2px solid;
 	border-radius: 48px;
 	padding: ${props => (props.size === 'large' ? '22px' : '14px')} 24px;
-	transition: color 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+	transition: color 0.3s ease, border-color 0.3s ease,
+		background-color 0.3s ease;
 	background: unset;
 	display: flex;
 	justify-content: center;
@@ -21,29 +22,63 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 		switch (props.buttonType) {
 			case 'primary':
 				return props.disabled
-					? `color: ${brandColors.pinky[300]};border-color: ${brandColors.pinky[300]};`
-					: `color: ${brandColors.pinky[400]};border-color: ${brandColors.pinky[400]};`;
+					? css`
+							color: ${brandColors.pinky[300]};
+							border-color: ${brandColors.pinky[300]};
+					  `
+					: css`
+							color: ${brandColors.pinky[400]};
+							border-color: ${brandColors.pinky[400]};
+					  `;
 			case 'secondary':
 				return props.disabled
-					? `color: ${brandColors.giv[500]};border-color: ${brandColors.giv[500]};opacity: 0.4;`
-					: `color: ${brandColors.giv['000']};border-color: ${brandColors.giv['000']};`;
+					? css`
+							color: ${brandColors.giv[500]};
+							border-color: ${brandColors.giv[500]};
+							opacity: 0.4;
+					  `
+					: css`
+							color: ${brandColors.giv['000']};
+							border-color: ${brandColors.giv['000']};
+					  `;
 			default:
 				return props.disabled
-					? `color: ${brandColors.giv[500]};border-color: ${brandColors.giv[500]};opacity: 0.4;`
-					: `color: ${brandColors.pinky[400]};border-color: ${brandColors.pinky[400]};`;
+					? css`
+							color: ${brandColors.giv[500]};
+							border-color: ${brandColors.giv[500]};
+							opacity: 0.4;
+					  `
+					: css`
+							color: ${brandColors.pinky[400]};
+							border-color: ${brandColors.pinky[400]};
+					  `;
 		}
 	}}
-	${props => (props.disabled ? '' : 'cursor: pointer;')}
+	${props =>
+		props.disabled
+			? ''
+			: css`
+					cursor: pointer;
+			  `}
   :hover {
 		${props => {
 			if (props.disabled) return '';
 			switch (props.buttonType) {
 				case 'primary':
-					return `color: ${brandColors.pinky[500]};border-color: ${brandColors.pinky[500]};`;
+					return css`
+						color: ${brandColors.pinky[500]};
+						border-color: ${brandColors.pinky[500]};
+					`;
 				case 'secondary':
-					return `color: ${brandColors.giv[500]};background: ${brandColors.giv['000']};`;
+					return css`
+						color: ${brandColors.giv[500]};
+						background: ${brandColors.giv['000']};
+					`;
 				default:
-					return `color: ${brandColors.pinky[500]};border-color: ${brandColors.pinky[500]};`;
+					return css`
+						color: ${brandColors.pinky[500]};
+						border-color: ${brandColors.pinky[500]};
+					`;
 			}
 		}}
 	}
