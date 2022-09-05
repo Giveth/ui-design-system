@@ -2,7 +2,6 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { ButtonLink } from '../components/buttonLinks/ButtonLink';
 
-
 export default {
 	title: 'Example/ButtonLink',
 	component: ButtonLink,
