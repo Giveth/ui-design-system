@@ -7,15 +7,19 @@ export interface IButtonContainerProps {
 		| 'texty'
 		| 'texty-primary'
 		| 'texty-secondary';
-	size?: 'small' | 'medium' | 'large';
 	disabled?: boolean;
-	onClick?: MouseEventHandler<HTMLButtonElement>;
-	icon?: ReactNode;
-	className?: string;
+	size?: 'small' | 'medium' | 'large';
 }
 
-export interface IButtonProps extends IButtonContainerProps {
+export interface IButtonProps extends React.ComponentPropsWithoutRef<'button'> {
 	loading?: boolean;
 	label: string;
-	type?: 'button' | 'submit' | 'reset';
+	buttonType?:
+		| 'primary'
+		| 'secondary'
+		| 'texty'
+		| 'texty-primary'
+		| 'texty-secondary';
+	size?: 'small' | 'medium' | 'large';
+	icon?: ReactNode;
 }
