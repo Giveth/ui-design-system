@@ -49,6 +49,33 @@ const ButtonLinkContainer = styled.a<IButtonLinkContainerProps>`
 							background-color: unset;
 							padding: 8px 24px;
 					  `;
+			case 'texty-primary':
+				return props.disabled
+					? css`
+							color: ${brandColors.pinky[500]};
+							background-color: unset;
+							padding: 8px 24px;
+							opacity: 0.5;
+					  `
+					: css`
+							color: ${brandColors.pinky[500]};
+							background-color: unset;
+							padding: 8px 24px;
+					  `;
+			case 'texty-secondary':
+				return props.disabled
+					? css`
+							color: ${brandColors.giv[500]};
+							background-color: unset;
+							padding: 8px 24px;
+							opacity: 0.5;
+					  `
+					: css`
+							color: ${brandColors.giv[500]};
+							background-color: unset;
+							padding: 8px 24px;
+					  `;
+
 			default:
 				return props.disabled
 					? css`
