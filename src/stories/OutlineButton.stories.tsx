@@ -1,30 +1,30 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { OulineButton } from '../components/buttons/OulineButton';
+import { OutlineButton } from '../components/buttons/OutlineButton';
 
 export default {
 	title: 'Example/Button',
-	component: OulineButton,
-} as ComponentMeta<typeof OulineButton>;
+	component: OutlineButton,
+} as ComponentMeta<typeof OutlineButton>;
 
-const Template: ComponentStory<typeof OulineButton> = args => (
-	<OulineButton {...args}>{args.label}</OulineButton>
+const Template: ComponentStory<typeof OutlineButton> = args => (
+	<OutlineButton {...args}>{args.label}</OutlineButton>
 );
 
-export const OulinePrimary = Template.bind({});
-OulinePrimary.args = {
+export const OutlinePrimary = Template.bind({});
+OutlinePrimary.args = {
 	buttonType: 'primary',
-	label: 'Ouline Primary',
+	label: 'Outline Primary',
 	size: 'medium',
 	disabled: false,
 	loading: false,
 };
 
-export const OulineSecondary = Template.bind({});
-OulineSecondary.args = {
+export const OutlineSecondary = Template.bind({});
+OutlineSecondary.args = {
 	buttonType: 'secondary',
-	label: 'Ouline Secondary',
+	label: 'Outline Secondary',
 	size: 'medium',
 	disabled: false,
 	loading: false,

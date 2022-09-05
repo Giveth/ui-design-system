@@ -23,11 +23,11 @@ export * from './typography/headlines/H6';
 export * from './typography/ButtonText';
 
 export * from './buttons/Button';
-export * from './buttons/OulineButton';
+export * from './buttons/OutlineButton';
 export * from './buttons/type';
 
 export * from './buttonLinks/ButtonLink';
-export * from './buttonLinks/OulineButtonLink';
+export * from './buttonLinks/OutlineButtonLink';
 
 export * from './layout/Container';
 export * from './layout/ContainerFluid';
@@ -202,6 +202,9 @@ export * from './social-icons/Linkedin/Linkedin24';
 export * from './social-icons/Instagram/Instagram';
 export * from './social-icons/Instagram/Instagram18';
 export * from './social-icons/Instagram/Instagram24';
+export * from './social-icons/Discord/Discord';
+export * from './social-icons/Discord/Discord18';
+export * from './social-icons/Discord/Discord24';
 export * from './social-icons/Wikipedia';
 export * from './social-icons/Youtube';
 export * from './social-icons/Docs/Docs';
