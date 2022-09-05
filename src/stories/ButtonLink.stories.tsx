@@ -35,3 +35,21 @@ Texty.args = {
 	size: 'medium',
 	disabled: false,
 };
+
+export const TextyPrimary = Template.bind({});
+
+TextyPrimary.args = {
+	linkType: 'texty-primary',
+	label: 'Texty',
+	size: 'medium',
+	disabled: false,
+};
+
+export const TextySecondary = Template.bind({});
+
+TextySecondary.args = {
+	linkType: 'texty-secondary',
+	label: 'Texty',
+	size: 'medium',
+	disabled: false,
+};
