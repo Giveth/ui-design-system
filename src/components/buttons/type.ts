@@ -1,4 +1,4 @@
-import { MouseEventHandler, ReactNode } from 'react';
+import { ReactNode } from 'react';
 
 export interface IButtonContainerProps {
 	buttonType?:
@@ -11,15 +11,10 @@ export interface IButtonContainerProps {
 	size?: 'small' | 'medium' | 'large';
 }
 
-export interface IButtonProps extends React.ComponentPropsWithoutRef<'button'> {
+export interface IButtonProps
+	extends React.ComponentPropsWithoutRef<'button'>,
+		IButtonContainerProps {
 	loading?: boolean;
 	label: string;
-	buttonType?:
-		| 'primary'
-		| 'secondary'
-		| 'texty'
-		| 'texty-primary'
-		| 'texty-secondary';
-	size?: 'small' | 'medium' | 'large';
 	icon?: ReactNode;
 }
