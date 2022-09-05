@@ -11,6 +11,7 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 	border-radius: 48px;
 	padding: ${props => (props.size === 'large' ? '24px' : '16px')} 24px;
 	transition: background-color 0.3s ease, color 0.3s ease;
+	transition: opacity 0.3s ease, color 0.3s ease;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -19,6 +20,22 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 	${props => {
 		if (props.disabled) {
 			if (props.buttonType === 'texty') {
+				return css`
+					color: ${brandColors.giv[500]};
+					background-color: unset;
+					padding: 8px 24px;
+					opacity: 0.5;
+				`;
+			}
+			if (props.buttonType === 'texty-primary') {
+				return css`
+					color: ${brandColors.pinky[500]};
+					background-color: unset;
+					padding: 8px 24px;
+					opacity: 0.5;
+				`;
+			}
+			if (props.buttonType === 'texty-secondary') {
 				return css`
 					color: ${brandColors.giv[500]};
 					background-color: unset;
@@ -96,13 +113,11 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 					`;
 				case 'texty-primary':
 					return css`
-						color: ${neutralColors.gray[100]};
-						background-color: ${brandColors.pinky[700]};
+						color: ${brandColors.pinky[700]};
 					`;
 				case 'texty-secondary':
 					return css`
-						color: ${neutralColors.gray[100]};
-						background-color: ${brandColors.giv[700]};
+						color: ${brandColors.giv[700]};
 					`;
 				default:
 					return css`
