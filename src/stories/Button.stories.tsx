@@ -19,6 +19,7 @@ Primary.args = {
 	size: 'medium',
 	disabled: false,
 	loading: false,
+	onClick: () => alert('Hi Babe'),
 };
 
 export const Secondary = Template.bind({});
