@@ -2,7 +2,6 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { ButtonLink } from '../components/buttonLinks/ButtonLink';
 
-
 export default {
 	title: 'Example/ButtonLink',
 	component: ButtonLink,
@@ -18,6 +17,7 @@ Primary.args = {
 	label: 'Primary',
 	size: 'medium',
 	disabled: false,
+	href: '/test',
 };
 
 export const Secondary = Template.bind({});
@@ -31,6 +31,24 @@ Secondary.args = {
 export const Texty = Template.bind({});
 Texty.args = {
 	linkType: 'texty',
+	label: 'Texty',
+	size: 'medium',
+	disabled: false,
+};
+
+export const TextyPrimary = Template.bind({});
+
+TextyPrimary.args = {
+	linkType: 'texty-primary',
+	label: 'Texty',
+	size: 'medium',
+	disabled: false,
+};
+
+export const TextySecondary = Template.bind({});
+
+TextySecondary.args = {
+	linkType: 'texty-secondary',
 	label: 'Texty',
 	size: 'medium',
 	disabled: false,

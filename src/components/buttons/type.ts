@@ -1,16 +1,20 @@
-import { MouseEventHandler, ReactNode } from 'react';
+import type { ReactNode, ComponentPropsWithoutRef } from 'react';
 
 export interface IButtonContainerProps {
-	buttonType?: 'primary' | 'secondary' | 'texty';
-	size?: 'small' | 'medium' | 'large';
+	buttonType?:
+		| 'primary'
+		| 'secondary'
+		| 'texty'
+		| 'texty-primary'
+		| 'texty-secondary';
 	disabled?: boolean;
-	onClick?: MouseEventHandler<HTMLButtonElement>;
-	icon?: ReactNode;
-	className?: string;
+	size?: 'small' | 'medium' | 'large';
 }
 
-export interface IButtonProps extends IButtonContainerProps {
+export interface IButtonProps
+	extends ComponentPropsWithoutRef<'button'>,
+		IButtonContainerProps {
 	loading?: boolean;
 	label: string;
-	type?: 'button' | 'submit' | 'reset';
+	icon?: ReactNode;
 }

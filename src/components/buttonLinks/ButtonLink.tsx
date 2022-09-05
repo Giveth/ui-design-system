@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import { FC } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { brandColors, neutralColors } from '../../common/colors';
 import { ButtonText } from '../typography/ButtonText';
 import { IButtonLinkContainerProps, IButtonLinkProps } from './type';
@@ -19,35 +19,105 @@ const ButtonLinkContainer = styled.a<IButtonLinkContainerProps>`
 		switch (props.linkType) {
 			case 'primary':
 				return props.disabled
-					? `color: ${brandColors.giv[400]};background-color: ${brandColors.giv[500]};`
-					: `color: ${neutralColors.gray[100]};background-color: ${brandColors.pinky[500]};`;
+					? css`
+							color: ${brandColors.giv[400]};
+							background-color: ${brandColors.giv[500]};
+					  `
+					: css`
+							color: ${neutralColors.gray[100]};
+							background-color: ${brandColors.pinky[500]};
+					  `;
 			case 'secondary':
 				return props.disabled
-					? `color: ${brandColors.giv[400]};background-color: ${brandColors.giv[500]};`
-					: `color: ${neutralColors.gray[100]};background-color: ${brandColors.giv[500]};`;
+					? css`
+							color: ${brandColors.giv[400]};
+							background-color: ${brandColors.giv[500]};
+					  `
+					: css`
+							color: ${neutralColors.gray[100]};
+							background-color: ${brandColors.giv[500]};
+					  `;
 			case 'texty':
 				return props.disabled
-					? `color: ${brandColors.giv[500]};background-color: unset};padding: 8px 24px;`
-					: `color: ${brandColors.deep[100]};background-color: unset};padding: 8px 24px;`;
+					? css`
+							color: ${brandColors.giv[500]};
+							background-color: unset;
+							padding: 8px 24px;
+					  `
+					: css`
+							color: ${brandColors.deep[100]};
+							background-color: unset;
+							padding: 8px 24px;
+					  `;
+			case 'texty-primary':
+				return props.disabled
+					? css`
+							color: ${brandColors.pinky[500]};
+							background-color: unset;
+							padding: 8px 24px;
+							opacity: 0.5;
+					  `
+					: css`
+							color: ${brandColors.pinky[500]};
+							background-color: unset;
+							padding: 8px 24px;
+					  `;
+			case 'texty-secondary':
+				return props.disabled
+					? css`
+							color: ${brandColors.giv[500]};
+							background-color: unset;
+							padding: 8px 24px;
+							opacity: 0.5;
+					  `
+					: css`
+							color: ${brandColors.giv[500]};
+							background-color: unset;
+							padding: 8px 24px;
+					  `;
+
 			default:
 				return props.disabled
-					? `color: ${brandColors.giv[400]};background-color: ${brandColors.giv[500]};`
-					: `color: ${neutralColors.gray[100]};background-color: ${brandColors.pinky[500]};`;
+					? css`
+							color: ${brandColors.giv[400]};
+							background-color: ${brandColors.giv[500]};
+					  `
+					: css`
+							color: ${neutralColors.gray[100]};
+							background-color: ${brandColors.pinky[500]};
+					  `;
 		}
 	}}
-	${props => (props.disabled ? '' : 'cursor: pointer;')}
+	${props =>
+		props.disabled
+			? ''
+			: css`
+					cursor: pointer;
+			  `}
   :hover {
 		${props => {
 			if (props.disabled) return '';
 			switch (props.linkType) {
 				case 'primary':
-					return `color: ${neutralColors.gray[100]};background-color: ${brandColors.pinky[600]};`;
+					return css`
+						color: ${neutralColors.gray[100]};
+						background-color: ${brandColors.pinky[600]};
+					`;
 				case 'secondary':
-					return `color: ${neutralColors.gray[100]};background-color: ${brandColors.giv[700]};`;
+					return css`
+						color: ${neutralColors.gray[100]};
+						background-color: ${brandColors.giv[700]};
+					`;
 				case 'texty':
-					return `color: ${brandColors.deep[100]};background-color: ${brandColors.giv[700]}};`;
+					return css`
+						color: ${brandColors.deep[100]};
+						background-color: ${brandColors.giv[700]};
+					`;
 				default:
-					return `color: ${brandColors.deep[100]};background-color: ${brandColors.giv[700]}};`;
+					return css`
+						color: ${brandColors.deep[100]};
+						background-color: ${brandColors.giv[700]};
+					`;
 			}
 		}}
 	}

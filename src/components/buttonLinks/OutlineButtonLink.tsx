@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import { FC } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { brandColors } from '../../common/colors';
 import { ButtonText } from '../typography/ButtonText';
 import { IButtonLinkContainerProps, IButtonLinkProps } from './type';
@@ -21,16 +21,34 @@ const ButtonLinkContainer = styled.a<IButtonLinkContainerProps>`
 		switch (props.linkType) {
 			case 'primary':
 				return props.disabled
-					? `color: ${brandColors.giv[500]};border-color: ${brandColors.giv[500]};`
-					: `color: ${brandColors.pinky[400]};border-color: ${brandColors.pinky[400]};`;
+					? css`
+							color: ${brandColors.giv[500]};
+							border-color: ${brandColors.giv[500]};
+					  `
+					: css`
+							color: ${brandColors.pinky[400]};
+							border-color: ${brandColors.pinky[400]};
+					  `;
 			case 'secondary':
 				return props.disabled
-					? `color: ${brandColors.giv[500]};border-color: ${brandColors.giv[500]};`
-					: `color: ${brandColors.giv['000']};border-color: ${brandColors.giv['000']};`;
+					? css`
+							color: ${brandColors.giv[500]};
+							border-color: ${brandColors.giv[500]};
+					  `
+					: css`
+							color: ${brandColors.giv['000']};
+							border-color: ${brandColors.giv['000']};
+					  `;
 			default:
 				return props.disabled
-					? `color: ${brandColors.giv[500]};border-color: ${brandColors.giv[500]};`
-					: `color: ${brandColors.pinky[400]};border-color: ${brandColors.pinky[400]};`;
+					? css`
+							color: ${brandColors.giv[500]};
+							border-color: ${brandColors.giv[500]};
+					  `
+					: css`
+							color: ${brandColors.pinky[400]};
+							border-color: ${brandColors.pinky[400]};
+					  `;
 		}
 	}}
 	${props => (props.disabled ? '' : 'cursor: pointer;')}
@@ -39,11 +57,20 @@ const ButtonLinkContainer = styled.a<IButtonLinkContainerProps>`
 			if (props.disabled) return '';
 			switch (props.linkType) {
 				case 'primary':
-					return `color: ${brandColors.pinky[500]};border-color: ${brandColors.pinky[500]};`;
+					return css`
+						color: ${brandColors.pinky[500]};
+						border-color: ${brandColors.pinky[500]};
+					`;
 				case 'secondary':
-					return `color: ${brandColors.giv[500]};background-color: ${brandColors.giv['000']};`;
+					return css`
+						color: ${brandColors.giv[500]};
+						background-color: ${brandColors.giv['000']};
+					`;
 				default:
-					return `color: ${brandColors.pinky[500]};border-color: ${brandColors.pinky[500]};`;
+					return css`
+						color: ${brandColors.pinky[500]};
+						border-color: ${brandColors.pinky[500]};
+					`;
 			}
 		}}
 	}
