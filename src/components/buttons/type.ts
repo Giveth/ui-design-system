@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode, ComponentPropsWithoutRef } from 'react';
 
 export interface IButtonContainerProps {
 	buttonType?:
@@ -12,7 +12,7 @@ export interface IButtonContainerProps {
 }
 
 export interface IButtonProps
-	extends React.ComponentPropsWithoutRef<'button'>,
+	extends ComponentPropsWithoutRef<'button'>,
 		IButtonContainerProps {
 	loading?: boolean;
 	label: string;
