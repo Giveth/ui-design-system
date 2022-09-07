@@ -92,6 +92,11 @@ export * from './icons/Unlock/Unlock16';
 export * from './icons/Unlock/Unlock24';
 export * from './icons/Unlock/Unlock32';
 
+export * from './icons/UnLockable/UnLockable';
+export * from './icons/UnLockable/UnLockable16';
+export * from './icons/UnLockable/UnLockable24';
+export * from './icons/UnLockable/UnLockable32';
+
 export * from './icons/RocketInSpace/RocketInSpace';
 export * from './icons/RocketInSpace/RocketInSpace16';
 export * from './icons/RocketInSpace/RocketInSpace24';
