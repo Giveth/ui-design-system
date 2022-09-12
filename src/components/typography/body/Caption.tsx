@@ -6,9 +6,9 @@ export interface ICaptionProps {
 
 export const Caption = styled.div<ICaptionProps>`
 	/* Body/Caption */
-	font-family: Red Hat Text;
+	font-family: Red Hat Text, sans-serif;
 	font-style: normal;
 	font-weight: ${props => (props.medium ? 500 : 400)};
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 150%;
 `;
