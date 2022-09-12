@@ -6,21 +6,21 @@ export interface IGLinkProps {
 
 export const GLink = styled.a<IGLinkProps>`
 	/* Link/Tiny */
-	font-family: Red Hat Text;
+	font-family: Red Hat Text, sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	${props => {
 		switch (props.size) {
 			case 'Tiny':
-				return 'font-size: 10px;line-height: normal;';
+				return 'font-size: 0.625rem;line-height: 132%;';
 			case 'Small':
-				return 'font-size: 12px;line-height: normal;';
+				return 'font-size: 0.75rem;line-height: 132%;';
 			case 'Medium':
-				return 'font-size: 14px;line-height: 160%;';
+				return 'font-size: 0.875rem;line-height: 157%;';
 			case 'Big':
-				return 'font-size: 16px;line-height: normal;';
+				return 'font-size: 1rem;line-height: 132%;';
 			default:
-				return 'font-size: 14px;line-height: 160%;';
+				return 'font-size: 0.875rem;line-height: 157%;';
 		}
 	}}
 `;

@@ -5,13 +5,13 @@ export interface ILeadProps {
 }
 
 const fontSize = {
-	medium: '20px',
-	large: '24px',
+	medium: '1.25rem',
+	large: '1.5rem',
 };
 
 export const Lead = styled.div<ILeadProps>`
 	/* Body/Lead */
-	font-family: Red Hat Text;
+	font-family: Red Hat Text, sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	line-height: 150%;

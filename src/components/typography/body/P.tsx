@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const P = styled.div`
 	/* Body/P */
-	font-family: Red Hat Text;
+	font-family: Red Hat Text, sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 150%;
 `;

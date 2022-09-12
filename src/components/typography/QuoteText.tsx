@@ -6,19 +6,20 @@ export interface IQuoteTextProps {
 
 export const QuoteText = styled.div<IQuoteTextProps>`
 	/* QuoteText */
-	font-family: Red Hat Text;
+	font-family: Red Hat Text, sans-serif;
 	font-weight: normal;
 	font-style: normal;
+	line-height: 134%;
 	${props => {
 		switch (props.size) {
 			case 'small':
-				return 'font-size: 24px;line-height: normal;';
+				return 'font-size: 1.5rem;';
 			case 'medium':
-				return 'font-size: 28px;line-height: 134%;';
+				return 'font-size: 1.75rem;';
 			case 'large':
-				return 'font-size: 32px;line-height: 134%;';
+				return 'font-size: 2rem;';
 			default:
-				return 'font-size: 28px;line-height: 134%;';
+				return 'font-size: 1.75rem;';
 		}
 	}}
 `;
