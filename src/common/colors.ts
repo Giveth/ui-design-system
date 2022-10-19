@@ -21,6 +21,7 @@ export const brandColors = {
 		'300': '#8668FC',
 		'200': '#B9A7FF',
 		'100': '#E7E1FF',
+		'50': '#F6F3FF',
 		'000': '#FCFCFF',
 	},
 	cyan: {
