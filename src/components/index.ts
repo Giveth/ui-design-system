@@ -122,6 +122,11 @@ export * from './icons/NotificationOutline/NotificationOutline16';
 export * from './icons/NotificationOutline/NotificationOutline24';
 export * from './icons/NotificationOutline/NotificationOutline32';
 
+export * from './icons/Config/Config';
+export * from './icons/Config/Config16';
+export * from './icons/Config/Config24';
+export * from './icons/Config/Config32';
+
 export * from './icons/arrowCircles/ArrowCircleBottom';
 export * from './icons/arrowCircles/ArrowCircleLeft';
 export * from './icons/arrowCircles/ArrowCircleRight';
