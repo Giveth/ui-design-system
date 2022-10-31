@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
-import { IIconProps } from './type';
+import { IIconProps } from '../type';
 
-export const IconConfig: FC<IIconProps> = ({
+export const IconConfig24: FC<IIconProps> = ({
 	size = 24,
 	color = 'currentColor',
 }) => {
