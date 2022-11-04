@@ -155,8 +155,12 @@ export * from './icons/giv-economy/Farm';
 export * from './icons/giv-economy/Garden';
 export * from './icons/giv-economy/Stream';
 
+export * from './icons/AlertCircle/AlertCircle';
+export * from './icons/AlertCircle/AlertCircle16';
+export * from './icons/AlertCircle/AlertCircle24';
+export * from './icons/AlertCircle/AlertCircle32';
+
 export * from './icons/Archiving';
-export * from './icons/AlertCircle';
 export * from './icons/AlertTriangle';
 export * from './icons/Bell';
 export * from './icons/BellOutline';
