@@ -1,15 +1,18 @@
 import React, { FC } from 'react';
 import { IIconProps } from '../type';
 
-export const IconConfig16: FC<IIconProps> = ({ color = 'currentColor' }) => {
-	return (
-		<svg
-			width='16'
-			height='16'
-			viewBox='0 0 16 16'
-			fill='none'
-			xmlns='http://www.w3.org/2000/svg'
-		>
+export const IconConfig16: FC<IIconProps> = ({
+	size = 16,
+	color = 'currentColor',
+}) => (
+	<svg
+		width={size}
+		height={size}
+		viewBox='0 0 16 16'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
+	>
+		<g clipPath='url(#clip0_3446_63172)'>
 			<path
 				d='M8.00002 10C9.10459 10 10 9.10457 10 8C10 6.89543 9.10459 6 8.00002 6C6.89545 6 6.00002 6.89543 6.00002 8C6.00002 9.10457 6.89545 10 8.00002 10Z'
 				stroke={color}
@@ -22,6 +25,11 @@ export const IconConfig16: FC<IIconProps> = ({ color = 'currentColor' }) => {
 				strokeLinecap='round'
 				strokeLinejoin='round'
 			/>
-		</svg>
-	);
-};
+		</g>
+		<defs>
+			<clipPath id='clip0_3446_63172'>
+				<rect width={size} height={size} fill='white' />
+			</clipPath>
+		</defs>
+	</svg>
+);

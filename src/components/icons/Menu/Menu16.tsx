@@ -8,11 +8,24 @@ export const IconMenu16: FC<IIconProps> = ({
 	<svg
 		width={size}
 		height={size}
+		viewBox='0 0 16 16'
 		fill='none'
 		xmlns='http://www.w3.org/2000/svg'
 	>
 		<path
-			d='M2 8h12M2 4h12M2 12h12'
+			d='M2 8H14'
+			stroke={color}
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M2 4H14'
+			stroke={color}
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M2 12H14'
 			stroke={color}
 			strokeLinecap='round'
 			strokeLinejoin='round'
