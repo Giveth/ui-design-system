@@ -1,0 +1,23 @@
+import React, { FC } from 'react';
+import { IIconProps } from '../type';
+
+export const IconPointerLeft32: FC<IIconProps> = ({
+	size = 32,
+	color = 'currentColor',
+}) => (
+	<svg
+		width={size}
+		height={size}
+		viewBox='0 0 32 32'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
+	>
+		<path
+			d='M31 16.6627H1M1 16.6627L6 21.6627M1 16.6627L6 11.6627'
+			stroke={color}
+			strokeWidth='2'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+	</svg>
+);
