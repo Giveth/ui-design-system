@@ -6,8 +6,8 @@ export const IconBulbOff16: FC<IIconProps> = ({
 	color = 'currentColor',
 }) => (
 	<svg
-		width='15'
-		height='15'
+		width={size}
+		height={size}
 		viewBox='0 0 15 15'
 		fill='none'
 		xmlns='http://www.w3.org/2000/svg'
