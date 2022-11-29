@@ -35,10 +35,6 @@ export * from './layout/ContainerFluid';
 export * from './icons';
 export * from './icons/type';
 
-export * from './currency-icons/ETH';
-export * from './currency-icons/Giveth';
-export * from './currency-icons/Honey';
-
 export * from './social-icons/Github';
 export * from './social-icons/Medium';
 export * from './social-icons/Reddit';
