@@ -4,8 +4,7 @@ export interface IGLinkProps {
 	size?: 'Tiny' | 'Small' | 'Medium' | 'Big';
 }
 
-export const GLink = styled.a<IGLinkProps>`
-	/* Link/Tiny */
+export const GLink = styled.span<IGLinkProps>`
 	font-family: Red Hat Text, sans-serif;
 	font-style: normal;
 	font-weight: normal;
