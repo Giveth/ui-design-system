@@ -9,6 +9,7 @@ export interface IButtonLinkContainerProps {
 		| 'texty-secondary';
 	size?: 'small' | 'medium' | 'large';
 	disabled?: boolean;
+	isExternal?: boolean;
 }
 
 export interface IButtonLinkProps
