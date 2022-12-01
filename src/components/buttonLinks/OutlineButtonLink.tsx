@@ -5,7 +5,7 @@ import { brandColors } from '../../common/colors';
 import { ButtonText } from '../typography/ButtonText';
 import { IButtonLinkContainerProps, IButtonLinkProps } from './type';
 
-const ButtonLinkContainer = styled.a<IButtonLinkContainerProps>`
+const ButtonLinkContainer = styled.span<IButtonLinkContainerProps>`
 	border: 2px solid;
 	border-radius: 48px;
 	padding: ${props => (props.size === 'large' ? '22px' : '14px')} 24px;
@@ -87,7 +87,7 @@ export const OutlineLinkButton: FC<IButtonLinkProps> = forwardRef(
 			href,
 			target,
 			className,
-			onClick,
+			isExternal,
 		},
 		ref,
 	) => {
@@ -95,12 +95,12 @@ export const OutlineLinkButton: FC<IButtonLinkProps> = forwardRef(
 			<ButtonLinkContainer
 				ref={ref as any}
 				href={href}
-				onClick={onClick}
 				target={target}
 				linkType={linkType}
 				size={size}
 				disabled={disabled}
 				className={className}
+				as={isExternal ? 'a' : 'span'}
 			>
 				<ButtonText as='span' size={size}>
 					{label}
