@@ -4,7 +4,7 @@ export interface IButtonTextProps {
 	size?: 'small' | 'medium' | 'large';
 }
 
-export const ButtonText = styled.a<IButtonTextProps>`
+export const ButtonText = styled.span<IButtonTextProps>`
 	font-family: Red Hat Text, sans-serif;
 	font-style: normal;
 	text-transform: uppercase;

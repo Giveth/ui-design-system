@@ -5,7 +5,7 @@ import { brandColors, neutralColors } from '../../common/colors';
 import { ButtonText } from '../typography/ButtonText';
 import { IButtonLinkContainerProps, IButtonLinkProps } from './type';
 
-const ButtonLinkContainer = styled.a<IButtonLinkContainerProps>`
+const ButtonLinkContainer = styled.span<IButtonLinkContainerProps>`
 	border: none;
 	border-radius: 48px;
 	padding: ${props => (props.size === 'large' ? '24px' : '16px')} 24px;
@@ -134,7 +134,7 @@ export const ButtonLink: FC<IButtonLinkProps> = forwardRef(
 			target,
 			className,
 			href,
-			onClick,
+			isExternal,
 		},
 		ref,
 	) => {
@@ -142,7 +142,7 @@ export const ButtonLink: FC<IButtonLinkProps> = forwardRef(
 			<ButtonLinkContainer
 				ref={ref as any}
 				href={href}
-				onClick={onClick}
+				as={isExternal ? 'a' : 'span'}
 				target={target}
 				linkType={linkType}
 				disabled={disabled}
