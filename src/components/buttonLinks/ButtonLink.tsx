@@ -113,6 +113,11 @@ const ButtonLinkContainer = styled.span<IButtonLinkContainerProps>`
 						color: ${brandColors.deep[100]};
 						background-color: ${brandColors.giv[700]};
 					`;
+				case 'texty-secondary':
+					return css`
+						color: ${neutralColors.gray[100]};
+						background-color: ${brandColors.giv[700]};
+					`;
 				default:
 					return css`
 						color: ${brandColors.deep[100]};
