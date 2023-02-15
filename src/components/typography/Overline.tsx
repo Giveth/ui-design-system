@@ -4,7 +4,7 @@ export interface IOverlineProps {
 	styleType?: 'Small' | 'Regular' | 'Italic';
 }
 
-export const Overline = styled.a<IOverlineProps>`
+export const Overline = styled.span<IOverlineProps>`
 	/* Overline */
 	font-family: Red Hat Text, sans-serif;
 	line-height: 132%;
