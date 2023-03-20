@@ -29,8 +29,7 @@ export * from './buttons/type';
 export * from './buttonLinks/ButtonLink';
 export * from './buttonLinks/OutlineButtonLink';
 
-export * from './layout/Container';
-export * from './layout/ContainerFluid';
+export * from './layout/Grid';
 
 export * from './icons';
 export * from './icons/type';
