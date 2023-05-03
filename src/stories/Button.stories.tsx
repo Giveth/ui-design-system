@@ -40,6 +40,15 @@ Texty.args = {
 	loading: false,
 };
 
+export const TextyGray = Template.bind({});
+TextyGray.args = {
+	buttonType: 'texty-gray',
+	label: 'Texty',
+	size: 'medium',
+	disabled: false,
+	loading: false,
+};
+
 export const TextyPrimary = Template.bind({});
 TextyPrimary.args = {
 	buttonType: 'texty-primary',

@@ -36,6 +36,15 @@ Texty.args = {
 	disabled: false,
 };
 
+export const TextyGray = Template.bind({});
+
+TextyGray.args = {
+	linkType: 'texty-gray',
+	label: 'Texty',
+	size: 'medium',
+	disabled: false,
+};
+
 export const TextyPrimary = Template.bind({});
 
 TextyPrimary.args = {

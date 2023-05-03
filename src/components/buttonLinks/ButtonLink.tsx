@@ -49,6 +49,19 @@ const ButtonLinkContainer = styled.span<IButtonLinkContainerProps>`
 							background-color: unset;
 							padding: 8px 24px;
 					  `;
+			case 'texty-gray':
+				return props.disabled
+					? css`
+							color: ${neutralColors.gray[500]};
+							background-color: unset;
+							padding: 8px 24px;
+							opacity: 0.5;
+					  `
+					: css`
+							color: ${neutralColors.gray[500]};
+							background-color: unset;
+							padding: 8px 24px;
+					  `;
 			case 'texty-primary':
 				return props.disabled
 					? css`
@@ -113,20 +126,21 @@ const ButtonLinkContainer = styled.span<IButtonLinkContainerProps>`
 						color: ${brandColors.deep[100]};
 						background-color: ${brandColors.giv[700]};
 					`;
+				case 'texty-gray':
+					return css`
+						color: ${neutralColors.gray[700]};
+					`;
 				case 'texty-primary':
 					return css`
 						color: ${neutralColors.gray[100]};
-						background-color: ${brandColors.pinky[600]};
 					`;
 				case 'texty-secondary':
 					return css`
 						color: ${neutralColors.gray[100]};
-						background-color: ${brandColors.giv[700]};
 					`;
 				default:
 					return css`
 						color: ${brandColors.deep[100]};
-						background-color: ${brandColors.giv[700]};
 					`;
 			}
 		}}

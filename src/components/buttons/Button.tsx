@@ -27,6 +27,14 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 					opacity: 0.5;
 				`;
 			}
+			if (props.buttonType === 'texty-gray') {
+				return css`
+					color: ${neutralColors.gray[300]};
+					background-color: unset;
+					padding: 8px 24px;
+					opacity: 0.5;
+				`;
+			}
 			if (props.buttonType === 'texty-primary') {
 				return css`
 					color: ${brandColors.pinky[500]};
@@ -72,6 +80,12 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 					background-color: unset;
 					padding: 8px 24px;
 				`;
+			case 'texty-gray':
+				return css`
+					color: ${neutralColors.gray[500]};
+					background-color: unset;
+					padding: 8px 24px;
+				`;
 			case 'texty-primary':
 				return css`
 					color: ${brandColors.pinky[500]};
@@ -110,6 +124,10 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 					return css`
 						color: ${brandColors.deep[100]};
 						background-color: ${brandColors.giv[700]};
+					`;
+				case 'texty-gray':
+					return css`
+						color: ${neutralColors.gray[700]};
 					`;
 				case 'texty-primary':
 					return css`
