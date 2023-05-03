@@ -5,6 +5,7 @@ export interface IButtonContainerProps {
 		| 'primary'
 		| 'secondary'
 		| 'texty'
+		| 'texty-gray'
 		| 'texty-primary'
 		| 'texty-secondary';
 	disabled?: boolean;

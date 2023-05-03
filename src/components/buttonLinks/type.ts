@@ -5,6 +5,7 @@ export interface IButtonLinkContainerProps {
 		| 'primary'
 		| 'secondary'
 		| 'texty'
+		| 'texty-gray'
 		| 'texty-primary'
 		| 'texty-secondary';
 	size?: 'small' | 'medium' | 'large';
