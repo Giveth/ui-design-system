@@ -14,14 +14,14 @@ export const IconIncrease24: FC<IIconProps> = ({
 	>
 		<path
 			d='M23 6L13.5 15.5L8.5 10.5L1 18'
-			stroke='#24262E'
+			stroke={color}
 			stroke-width='1.5'
 			stroke-linecap='round'
 			stroke-linejoin='round'
 		/>
 		<path
 			d='M17 6H23V12'
-			stroke='#24262E'
+			stroke={color}
 			stroke-width='1.5'
 			stroke-linecap='round'
 			stroke-linejoin='round'

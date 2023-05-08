@@ -1,10 +1,7 @@
 import React, { FC } from 'react';
 import { IIconProps } from '../type';
 
-export const IconPassport16: FC<IIconProps> = ({
-	size = 16,
-	color = 'currentColor',
-}) => (
+export const IconPassport16: FC<IIconProps> = ({ size = 16 }) => (
 	<svg
 		width={size}
 		height={size}
