@@ -1,16 +1,13 @@
 import React, { FC } from 'react';
 import { IIconProps } from '../type';
-import { IconWrongNetwork16 } from './WrongNetwork16';
 import { IconWrongNetwork24 } from './WrongNetwork24';
 import { IconWrongNetwork32 } from './WrongNetwork32';
 
 export const IconWrongNetwork: FC<IIconProps> = ({
-	size = 16,
+	size = 24,
 	color = 'currentColor',
 }) => {
 	switch (size.toString()) {
-		case '16':
-			return <IconWrongNetwork16 color={color} />;
 		case '24':
 			return <IconWrongNetwork24 color={color} />;
 		case '32':
