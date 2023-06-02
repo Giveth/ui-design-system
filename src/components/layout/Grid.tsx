@@ -60,20 +60,20 @@ export const Container = styled.div`
 
 export const OneSideContainer = styled.div`
 	@media (min-width: ${minWidth.sm}px) {
-		width: calc(50vw + ${width.sm / 2}px);
-		margin-left: calc(50vw - ${width.sm / 2}px);
+		width: calc(50% + ${width.sm / 2}px);
+		margin-left: calc(50% - ${width.sm / 2}px);
 	}
 	@media (min-width: ${minWidth.md}px) {
-		width: calc(50vw + ${width.md / 2}px);
-		margin-left: calc(50vw - ${width.md / 2}px);
+		width: calc(50% + ${width.md / 2}px);
+		margin-left: calc(50% - ${width.md / 2}px);
 	}
 	@media (min-width: ${minWidth.lg}px) {
-		width: calc(50vw + ${width.lg / 2}px);
-		margin-left: calc(50vw - ${width.lg / 2}px);
+		width: calc(50% + ${width.lg / 2}px);
+		margin-left: calc(50% - ${width.lg / 2}px);
 	}
 	@media (min-width: ${minWidth.xl}px) {
-		width: calc(50vw + ${width.xl / 2}px);
-		margin-left: calc(50vw - ${width.xl / 2}px);
+		width: calc(50% + ${width.xl / 2}px);
+		margin-left: calc(50% - ${width.xl / 2}px);
 	}
 `;
 
