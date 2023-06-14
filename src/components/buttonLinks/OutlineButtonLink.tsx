@@ -84,6 +84,7 @@ export const OutlineLinkButton: FC<IButtonLinkProps> = forwardRef(
 			linkType = 'secondary',
 			disabled = false,
 			icon,
+			leftIcon,
 			href,
 			target,
 			className,
@@ -103,8 +104,9 @@ export const OutlineLinkButton: FC<IButtonLinkProps> = forwardRef(
 				as={isExternal ? 'a' : 'span'}
 			>
 				<ButtonText as='span' size={size}>
+					{leftIcon && leftIcon}
 					{label}
-					{icon && icon}
+					{icon && !leftIcon && icon}
 				</ButtonText>
 			</ButtonLinkContainer>
 		);

@@ -18,4 +18,5 @@ export interface IButtonProps
 	loading?: boolean;
 	label: string;
 	icon?: ReactNode;
+	leftIcon?: ReactNode;
 }
