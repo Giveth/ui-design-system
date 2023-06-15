@@ -17,5 +17,6 @@ export interface IButtonLinkProps
 	extends ComponentPropsWithoutRef<'a'>,
 		IButtonLinkContainerProps {
 	icon?: ReactNode;
+	leftIcon?: ReactNode;
 	label: string;
 }

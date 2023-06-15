@@ -155,6 +155,7 @@ export const ButtonLink: FC<IButtonLinkProps> = forwardRef(
 			linkType = 'secondary',
 			disabled = false,
 			icon,
+			leftIcon,
 			target,
 			className,
 			href,
@@ -173,10 +174,11 @@ export const ButtonLink: FC<IButtonLinkProps> = forwardRef(
 				size={size}
 				className={className}
 			>
+				{leftIcon && leftIcon}
 				<ButtonText as='span' size={size}>
 					{label}
 				</ButtonText>
-				{icon && icon}
+				{icon && !leftIcon && icon}
 			</ButtonLinkContainer>
 		);
 	},

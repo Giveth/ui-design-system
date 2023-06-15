@@ -155,6 +155,7 @@ export const Button: FC<IButtonProps> = ({
 	loading = false,
 	onClick,
 	icon,
+	leftIcon,
 	className,
 	type = 'button',
 }) => {
@@ -172,8 +173,9 @@ export const Button: FC<IButtonProps> = ({
 					<Loader buttonType={buttonType} disabled={disabled} />
 				)}
 			</LoadingContainer>
+			{leftIcon && leftIcon}
 			<ButtonText size={size}>{label}</ButtonText>
-			{icon && icon}
+			{icon && !leftIcon && icon}
 		</ButtonContainer>
 	);
 };
