@@ -15,14 +15,14 @@ export const IconIncrease16: FC<IIconProps> = ({
 		<path
 			d='M15.3333 4L8.99999 10.3333L5.66666 7L0.666656 12'
 			stroke={color}
-			stroke-linecap='round'
-			stroke-linejoin='round'
+			strokeLinecap='round'
+			strokeLinejoin='round'
 		/>
 		<path
 			d='M11.3333 4H15.3333V8'
 			stroke={color}
-			stroke-linecap='round'
-			stroke-linejoin='round'
+			strokeLinecap='round'
+			strokeLinejoin='round'
 		/>
 	</svg>
 );
