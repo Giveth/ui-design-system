@@ -132,9 +132,9 @@ export const Row = styled.div`
 
 const calculateWidth = (w: any) => {
 	if (typeof w === 'number') {
-		return `width: ${(100 * w) / 12}%`;
+		return `width: ${(100 * w) / 12}% !important`;
 	} else if (w === 'auto') {
-		return 'width: auto';
+		return 'width: auto !important';
 	}
 	return '';
 };
