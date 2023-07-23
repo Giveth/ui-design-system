@@ -9,7 +9,7 @@ const gutters = {
 };
 
 const margins = {
-	xs: '32px',
+	xs: '16px',
 	sm: '32px',
 	md: '40px',
 	lg: '32px',
