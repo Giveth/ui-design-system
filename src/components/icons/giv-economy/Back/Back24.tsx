@@ -10,6 +10,7 @@ export const IconGIVBack24: FC<IIconProps> = ({
 		width={size}
 		height={size}
 		fill='none'
+		viewBox='0 0 24 24'
 		xmlns='http://www.w3.org/2000/svg'
 	>
 		<path
