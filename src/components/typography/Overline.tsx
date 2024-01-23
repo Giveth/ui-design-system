@@ -8,6 +8,7 @@ export const Overline = styled.span<IOverlineProps>`
 	/* Overline */
 	font-family: Red Hat Text, sans-serif;
 	line-height: 132%;
+	color: ${props => (props.color ? props.color : 'inherit')};
 	${props => {
 		switch (props.styleType) {
 			case 'Small':
