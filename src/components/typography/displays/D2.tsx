@@ -9,6 +9,7 @@ export const D2 = styled.div`
 	font-size: 4.625rem;
 	line-height: 130%;
 	letter-spacing: -0.04em;
+	color: ${props => (props.color ? props.color : 'inherit')};
 	${mediaQueries.tablet} {
 		font-size: 6.06rem;
 	}
