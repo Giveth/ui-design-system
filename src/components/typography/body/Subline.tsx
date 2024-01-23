@@ -7,4 +7,5 @@ export const Subline = styled.div`
 	font-weight: normal;
 	font-size: 0.75rem;
 	line-height: 150%;
+	color: ${props => (props.color ? props.color : 'inherit')};
 `;
