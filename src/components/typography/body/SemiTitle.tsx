@@ -8,4 +8,5 @@ export const SemiTitle = styled.div`
 	font-size: 1rem;
 	line-height: 150%;
 	text-transform: uppercase;
+	color: ${props => (props.color ? props.color : 'inherit')};
 `;
