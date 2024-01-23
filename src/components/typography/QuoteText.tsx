@@ -10,6 +10,7 @@ export const QuoteText = styled.div<IQuoteTextProps>`
 	font-weight: normal;
 	font-style: normal;
 	line-height: 134%;
+	color: ${props => (props.color ? props.color : 'inherit')};
 	${props => {
 		switch (props.size) {
 			case 'small':
