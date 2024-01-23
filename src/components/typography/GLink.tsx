@@ -9,6 +9,7 @@ export const GLink = styled.span<IGLinkProps>`
 	font-style: normal;
 	font-weight: normal;
 	display: inline-block;
+	color: ${props => (props.color ? props.color : 'inherit')};
 	${props => {
 		switch (props.size) {
 			case 'Tiny':

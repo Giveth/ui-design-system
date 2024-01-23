@@ -11,6 +11,7 @@ export const H3 = styled.h3<IHeadingProps>`
 	line-height: 130%;
 	margin-top: 0;
 	margin-bottom: 0;
+	color: ${props => (props.color ? props.color : 'inherit')};
 	${mediaQueries.tablet} {
 		font-size: 2.56rem;
 	}

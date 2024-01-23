@@ -15,6 +15,7 @@ export const Lead = styled.div<ILeadProps>`
 	font-style: normal;
 	font-weight: normal;
 	line-height: 150%;
+	color: ${props => (props.color ? props.color : 'inherit')};
 	${props => {
 		switch (props.size) {
 			case 'medium':

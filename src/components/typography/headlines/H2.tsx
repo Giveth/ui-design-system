@@ -12,6 +12,7 @@ export const H2 = styled.h2<IHeadingProps>`
 	letter-spacing: -0.02em;
 	margin-top: 0;
 	margin-bottom: 0;
+	color: ${props => (props.color ? props.color : 'inherit')};
 	${mediaQueries.tablet} {
 		font-size: 3.25rem;
 	}

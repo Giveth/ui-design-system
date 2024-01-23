@@ -8,4 +8,5 @@ export const Title = styled.div`
 	font-size: 2rem;
 	line-height: 132%;
 	letter-spacing: -0.01em;
+	color: ${props => (props.color ? props.color : 'inherit')};
 `;

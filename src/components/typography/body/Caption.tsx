@@ -11,4 +11,5 @@ export const Caption = styled.div<ICaptionProps>`
 	font-weight: ${props => (props.medium ? 500 : 400)};
 	font-size: 0.875rem;
 	line-height: 150%;
+	color: ${props => (props.color ? props.color : 'inherit')};
 `;

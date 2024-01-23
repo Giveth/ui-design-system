@@ -8,9 +8,11 @@ export default {
 } as ComponentMeta<typeof P>;
 
 const Template: ComponentStory<typeof P> = args => (
-	<P {...args}>
+	<P {...args} color='red'>
 		{args.label || 'Was he a beast if music could move him so?'}
 	</P>
 );
 
-export const Example = Template.bind({});
+export const Example = Template.bind({
+	color: 'red',
+});
