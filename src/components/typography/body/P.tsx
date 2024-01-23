@@ -7,4 +7,5 @@ export const P = styled.div`
 	font-weight: normal;
 	font-size: 1rem;
 	line-height: 150%;
+	color: ${props => (props.color ? props.color : 'inherit')};
 `;
