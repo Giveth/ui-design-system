@@ -9,6 +9,7 @@ export const ButtonText = styled.span<IButtonTextProps>`
 	font-style: normal;
 	text-transform: uppercase;
 	font-weight: 700;
+	color: ${props => (props.color ? props.color : 'inherit')};
 	${props => {
 		switch (props.size) {
 			case 'small':
