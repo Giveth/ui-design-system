@@ -8,13 +8,13 @@
 	"module": "./lib/esm/index.js",
 	"types": "./lib/esm/index.d.ts",
 	"dependencies": {
-		"next": "13.1.6",
-		"react": "18.2.0",
-		"react-dom": "18.2.0",
-		"styled-components": "^5.3.6"
+		"next": "14.1.0",
+		"react": "^18",
+		"react-dom": "^18",
+		"styled-components": "^6.1.8"
 	},
 	"scripts": {
-		"build": "rm -rf lib;yarn build:esm && yarn build:cjs",
+		"build": "rm -rf lib;yarn build:esm",
 		"build:esm": "tsc",
 		"build:cjs": "tsc --module commonjs --outDir lib/cjs",
 		"storybook": "storybook dev -p 6006 -s public",
@@ -24,28 +24,22 @@
 		"lint:fix": "eslint . --ext .ts --ext .tsx --fix"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.21.0",
-		"@storybook/addon-actions": "^7.6.17",
 		"@storybook/addon-essentials": "^7.6.17",
 		"@storybook/addon-interactions": "^7.6.17",
 		"@storybook/addon-links": "^7.6.17",
-		"@storybook/addon-mdx-gfm": "^7.6.17",
+		"@storybook/addon-onboarding": "^1.0.11",
+		"@storybook/blocks": "^7.6.17",
 		"@storybook/nextjs": "^7.6.17",
 		"@storybook/react": "^7.6.17",
-		"@storybook/testing-library": "^0.0.13",
-		"@types/node": "18.14.0",
-		"@types/react": "18.0.28",
-		"@types/react-dom": "18.0.11",
-		"@types/styled-components": "^5.1.26",
-		"babel-loader": "^8.3.0",
-		"eslint": "8.34.0",
-		"eslint-config-next": "13.1.6",
-		"eslint-config-prettier": "^8.3.0",
-		"eslint-plugin-prettier": "^4.0.0",
-		"eslint-plugin-storybook": "^0.6.11",
-		"prettier": "^2.5.1",
+		"@storybook/test": "^7.6.17",
+		"@types/node": "^20",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"eslint": "^8",
+		"eslint-config-next": "14.1.0",
+		"eslint-plugin-storybook": "^0.8.0",
 		"storybook": "^7.6.17",
-		"typescript": "4.9.5"
+		"typescript": "^5"
 	},
 	"release": {
 		"branches": [
