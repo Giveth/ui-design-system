@@ -1,22 +1,18 @@
 import type { ReactNode, ComponentPropsWithoutRef } from 'react';
+import { ButtonSize, ButtonStyleType } from '../buttonLinks/type';
 
 export interface IButtonContainerProps {
-	buttonType?:
-		| 'primary'
-		| 'secondary'
-		| 'texty'
-		| 'texty-gray'
-		| 'texty-primary'
-		| 'texty-secondary';
+	$buttonType?: ButtonStyleType;
 	disabled?: boolean;
-	size?: 'small' | 'medium' | 'large';
+	size?: ButtonSize;
 }
 
-export interface IButtonProps
-	extends ComponentPropsWithoutRef<'button'>,
-		IButtonContainerProps {
+export interface IButtonProps extends ComponentPropsWithoutRef<'button'> {
 	loading?: boolean;
 	label: string;
 	icon?: ReactNode;
 	leftIcon?: ReactNode;
+	buttonType?: ButtonStyleType;
+	disabled?: boolean;
+	size?: ButtonSize;
 }

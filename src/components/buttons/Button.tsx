@@ -19,7 +19,7 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 	user-select: none;
 	${props => {
 		if (props.disabled) {
-			if (props.buttonType === 'texty') {
+			if (props.$buttonType === 'texty') {
 				return css`
 					color: ${brandColors.giv[500]};
 					background-color: unset;
@@ -27,7 +27,7 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 					opacity: 0.5;
 				`;
 			}
-			if (props.buttonType === 'texty-gray') {
+			if (props.$buttonType === 'texty-gray') {
 				return css`
 					color: ${neutralColors.gray[300]};
 					background-color: unset;
@@ -35,7 +35,7 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 					opacity: 0.5;
 				`;
 			}
-			if (props.buttonType === 'texty-primary') {
+			if (props.$buttonType === 'texty-primary') {
 				return css`
 					color: ${brandColors.pinky[500]};
 					background-color: unset;
@@ -43,7 +43,7 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 					opacity: 0.5;
 				`;
 			}
-			if (props.buttonType === 'texty-secondary') {
+			if (props.$buttonType === 'texty-secondary') {
 				return css`
 					color: ${brandColors.giv[500]};
 					background-color: unset;
@@ -51,7 +51,7 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 					opacity: 0.5;
 				`;
 			}
-			if (props.buttonType === 'primary') {
+			if (props.$buttonType === 'primary') {
 				return css`
 					background-color: ${brandColors.pinky[300]};
 					color: ${brandColors.pinky[200]};
@@ -63,7 +63,7 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 				opacity: 0.5;
 			`;
 		}
-		switch (props.buttonType) {
+		switch (props.$buttonType) {
 			case 'primary':
 				return css`
 					color: ${neutralColors.gray[100]};
@@ -109,7 +109,7 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
   :hover {
 		${props => {
 			if (props.disabled) return '';
-			switch (props.buttonType) {
+			switch (props.$buttonType) {
 				case 'primary':
 					return css`
 						color: ${neutralColors.gray[100]};
@@ -161,7 +161,7 @@ export const Button: FC<IButtonProps> = ({
 }) => {
 	return (
 		<ButtonContainer
-			buttonType={buttonType}
+			$buttonType={buttonType}
 			size={size}
 			disabled={disabled}
 			onClick={onClick}
@@ -170,7 +170,7 @@ export const Button: FC<IButtonProps> = ({
 		>
 			<LoadingContainer loading={+loading}>
 				{loading && (
-					<Loader buttonType={buttonType} disabled={disabled} />
+					<Loader $buttonType={buttonType} disabled={disabled} />
 				)}
 			</LoadingContainer>
 			{leftIcon && leftIcon}

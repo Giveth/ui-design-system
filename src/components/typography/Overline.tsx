@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export interface IOverlineProps {
-	styleType?: 'Small' | 'Regular' | 'Italic';
+	$styleType?: 'Small' | 'Regular' | 'Italic';
 }
 
 export const Overline = styled.span<IOverlineProps>`
@@ -10,7 +10,7 @@ export const Overline = styled.span<IOverlineProps>`
 	line-height: 132%;
 	color: ${props => (props.color ? props.color : 'inherit')};
 	${props => {
-		switch (props.styleType) {
+		switch (props.$styleType) {
 			case 'Small':
 				return 'font-size: 0.625rem;font-style: normal;font-weight: 500;';
 			case 'Regular':

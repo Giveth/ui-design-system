@@ -1,15 +1,11 @@
 import styled from 'styled-components';
 import { mediaQueries } from '../../../common/deviceSize';
+import { D } from './D';
 
-export const D2 = styled.div`
+export const D2 = styled(D)`
 	/* Display/D2 */
-	font-family: TeX Gyre Adventor, sans-serif;
-	font-style: normal;
-	font-weight: 700;
 	font-size: 4.625rem;
 	line-height: 130%;
-	letter-spacing: -0.04em;
-	color: ${props => (props.color ? props.color : 'inherit')};
 	${mediaQueries.tablet} {
 		font-size: 6.06rem;
 	}

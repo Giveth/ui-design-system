@@ -16,7 +16,7 @@ const ButtonLinkContainer = styled.span<IButtonLinkContainerProps>`
 	gap: 4px;
 	white-space: nowrap;
 	${props => {
-		switch (props.linkType) {
+		switch (props.$linkType) {
 			case 'primary':
 				return props.disabled
 					? css`
@@ -110,7 +110,7 @@ const ButtonLinkContainer = styled.span<IButtonLinkContainerProps>`
   :hover {
 		${props => {
 			if (props.disabled) return '';
-			switch (props.linkType) {
+			switch (props.$linkType) {
 				case 'primary':
 					return css`
 						color: ${neutralColors.gray[100]};
@@ -169,7 +169,7 @@ export const ButtonLink: FC<IButtonLinkProps> = forwardRef(
 				href={href}
 				as={isExternal ? 'a' : 'span'}
 				target={target}
-				linkType={linkType}
+				$linkType={linkType}
 				disabled={disabled}
 				size={size}
 				className={className}

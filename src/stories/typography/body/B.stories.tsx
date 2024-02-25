@@ -9,7 +9,7 @@ export default {
 
 const Template: ComponentStory<typeof B> = args => (
 	<B {...args}>
-		{args.label || 'Was he a beast if music could move him so?'}
+		{args.title || 'Was he a beast if music could move him so?'}
 	</B>
 );
 

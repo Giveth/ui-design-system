@@ -18,7 +18,7 @@ const ButtonLinkContainer = styled.span<IButtonLinkContainerProps>`
 	gap: 4px;
 	white-space: nowrap;
 	${props => {
-		switch (props.linkType) {
+		switch (props.$linkType) {
 			case 'primary':
 				return props.disabled
 					? css`
@@ -55,7 +55,7 @@ const ButtonLinkContainer = styled.span<IButtonLinkContainerProps>`
   :hover {
 		${props => {
 			if (props.disabled) return '';
-			switch (props.linkType) {
+			switch (props.$linkType) {
 				case 'primary':
 					return css`
 						color: ${brandColors.pinky[500]};
@@ -97,7 +97,7 @@ export const OutlineLinkButton: FC<IButtonLinkProps> = forwardRef(
 				ref={ref as any}
 				href={href}
 				target={target}
-				linkType={linkType}
+				$linkType={linkType}
 				size={size}
 				disabled={disabled}
 				className={className}

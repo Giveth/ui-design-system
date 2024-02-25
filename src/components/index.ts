@@ -30,6 +30,7 @@ export * from './buttonLinks/ButtonLink';
 export * from './buttonLinks/OutlineButtonLink';
 
 export * from './layout/Grid';
+export * from './layout/Flex';
 
 export * from './icons';
 export * from './icons/type';

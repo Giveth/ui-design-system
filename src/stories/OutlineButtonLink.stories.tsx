@@ -9,7 +9,7 @@ export default {
 } as ComponentMeta<typeof OutlineLinkButton>;
 
 const Template: ComponentStory<typeof OutlineLinkButton> = args => (
-	<OutlineLinkButton {...args}>{args.label}</OutlineLinkButton>
+	<OutlineLinkButton {...args}>{args.title}</OutlineLinkButton>
 );
 
 export const OutlinePrimary = Template.bind({});

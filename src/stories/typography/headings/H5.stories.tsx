@@ -13,7 +13,7 @@ export default {
 
 const Template: ComponentStory<typeof H5> = args => (
 	<H5 {...args}>
-		{args.label || 'Was he a beast if music could move him so?'}
+		{args.title || 'Was he a beast if music could move him so?'}
 	</H5>
 );
 
