@@ -8,7 +8,7 @@ export default {
 } as ComponentMeta<typeof ButtonLink>;
 
 const Template: ComponentStory<typeof ButtonLink> = args => (
-	<ButtonLink {...args}>{args.label}</ButtonLink>
+	<ButtonLink {...args}>{args.title}</ButtonLink>
 );
 
 export const Primary = Template.bind({});

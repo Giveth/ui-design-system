@@ -16,7 +16,7 @@ export default {
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof H1> = args => (
 	<H1 {...args}>
-		{args.label || 'Was he a beast if music could move him so?'}
+		{args.title || 'Was he a beast if music could move him so?'}
 	</H1>
 );
 
