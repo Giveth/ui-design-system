@@ -9,8 +9,11 @@ export default {
 
 const Template: ComponentStory<typeof Caption> = args => (
 	<Caption {...args}>
-		{args.label || 'Was he a beast if music could move him so?'}
+		{args.title || 'Was he a beast if music could move him so?'}
 	</Caption>
 );
 
 export const Example = Template.bind({});
+Example.args = {
+	$medium: true,
+};
