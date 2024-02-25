@@ -13,12 +13,12 @@ export const Loader = styled.div<IButtonContainerProps>`
 	border: 3px solid
 		${props => {
 			if (props.disabled) {
-				switch (props.buttonType) {
+				switch (props.$buttonType) {
 					case 'primary':
 						return brandColors.pinky[400];
 				}
 			}
-			switch (props.buttonType) {
+			switch (props.$buttonType) {
 				case 'primary':
 					return brandColors.pinky[600];
 				case 'secondary':

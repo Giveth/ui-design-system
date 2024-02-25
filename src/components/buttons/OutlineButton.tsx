@@ -20,7 +20,7 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 	white-space: nowrap;
 	user-select: none;
 	${props => {
-		switch (props.buttonType) {
+		switch (props.$buttonType) {
 			case 'primary':
 				return props.disabled
 					? css`
@@ -64,7 +64,7 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
   :hover {
 		${props => {
 			if (props.disabled) return '';
-			switch (props.buttonType) {
+			switch (props.$buttonType) {
 				case 'primary':
 					return css`
 						color: ${brandColors.pinky[500]};
@@ -99,7 +99,7 @@ export const OutlineButton: FC<IButtonProps> = ({
 }) => {
 	return (
 		<ButtonContainer
-			buttonType={buttonType}
+			$buttonType={buttonType}
 			disabled={disabled}
 			onClick={onClick}
 			className={className}
@@ -108,7 +108,7 @@ export const OutlineButton: FC<IButtonProps> = ({
 		>
 			<LoadingContainer loading={+loading}>
 				{loading && (
-					<Loader buttonType={buttonType} disabled={disabled} />
+					<Loader $buttonType={buttonType} disabled={disabled} />
 				)}
 			</LoadingContainer>
 			{leftIcon && leftIcon}
