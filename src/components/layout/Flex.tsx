@@ -1,5 +1,5 @@
 import { type CSSProperties } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 interface IFlexProps {
 	$flexWrap?: boolean;
@@ -11,14 +11,31 @@ interface IFlexProps {
 
 export const Flex = styled.div<IFlexProps>`
 	display: flex;
-	flex-direction: ${props =>
-		props.$flexDirection ? props.$flexDirection : 'initial'};
-	flex-wrap: ${props => (props.$flexWrap ? 'wrap' : 'nowrap')};
-	align-items: ${props =>
-		props.$alignItems ? props.$alignItems : 'initial'};
-	justify-content: ${props =>
-		props.$justifyContent ? props.$justifyContent : 'initial'};
-	gap: ${props => props.gap};
+	${props =>
+		props.$flexDirection &&
+		css`
+			flex-direction: ${props.$flexDirection};
+		`}
+	${props =>
+		props.$flexWrap &&
+		css`
+			flex-wrap: wrap;
+		`}
+	${props =>
+		props.$alignItems &&
+		css`
+			align-items: ${props.$alignItems};
+		`}
+	${props =>
+		props.$justifyContent &&
+		css`
+			justify-content: ${props.$justifyContent};
+		`}
+	${props =>
+		props.gap &&
+		css`
+			gap: ${props.gap};
+		`}
 `;
 
 interface IFlexCenter {
