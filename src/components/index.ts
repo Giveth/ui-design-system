@@ -38,6 +38,8 @@ export * from './icons/type';
 export * from './social-icons/Github';
 export * from './social-icons/Medium';
 export * from './social-icons/Reddit';
+export * from './social-icons/Faracaster';
+export * from './social-icons/Lens';
 export * from './social-icons/Twitter';
 export * from './social-icons/Facebook/Facebook';
 export * from './social-icons/Facebook/Facebook18';
