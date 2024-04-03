@@ -4,7 +4,9 @@ import { mediaQueries } from '../../../common/deviceSize';
 
 export const H2 = styled.h2<IHeadingProps>`
 	/* Heading/H2 | 500 */
-	font-family: TeX Gyre Adventor, sans-serif;
+	font-family:
+		TeX Gyre Adventor,
+		sans-serif;
 	font-style: normal;
 	font-weight: ${props => props.weight || 500};
 	font-size: 2.25rem;

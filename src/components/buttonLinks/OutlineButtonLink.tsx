@@ -9,7 +9,9 @@ const ButtonLinkContainer = styled.span<IButtonLinkContainerProps>`
 	border: 2px solid;
 	border-radius: 48px;
 	padding: ${props => (props.size === 'large' ? '22px' : '14px')} 24px;
-	transition: color 0.3s ease, border-color 0.3s ease,
+	transition:
+		color 0.3s ease,
+		border-color 0.3s ease,
 		background-color 0.3s ease;
 	background-color: unset;
 	display: flex;
@@ -24,31 +26,31 @@ const ButtonLinkContainer = styled.span<IButtonLinkContainerProps>`
 					? css`
 							color: ${brandColors.giv[500]};
 							border-color: ${brandColors.giv[500]};
-					  `
+						`
 					: css`
 							color: ${brandColors.pinky[400]};
 							border-color: ${brandColors.pinky[400]};
-					  `;
+						`;
 			case 'secondary':
 				return props.disabled
 					? css`
 							color: ${brandColors.giv[500]};
 							border-color: ${brandColors.giv[500]};
-					  `
+						`
 					: css`
 							color: ${brandColors.giv['000']};
 							border-color: ${brandColors.giv['000']};
-					  `;
+						`;
 			default:
 				return props.disabled
 					? css`
 							color: ${brandColors.giv[500]};
 							border-color: ${brandColors.giv[500]};
-					  `
+						`
 					: css`
 							color: ${brandColors.pinky[400]};
 							border-color: ${brandColors.pinky[400]};
-					  `;
+						`;
 		}
 	}}
 	${props => (props.disabled ? '' : 'cursor: pointer;')}

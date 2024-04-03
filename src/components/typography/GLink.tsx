@@ -5,7 +5,9 @@ export interface IGLinkProps {
 }
 
 export const GLink = styled.span<IGLinkProps>`
-	font-family: Red Hat Text, sans-serif;
+	font-family:
+		Red Hat Text,
+		sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	display: inline-block;
