@@ -1,6 +1,6 @@
 {
 	"name": "@giveth/ui-design-system",
-	"version": "1.11.24",
+	"version": "1.11.25",
 	"files": [
 		"/lib"
 	],
@@ -35,9 +35,13 @@
 		"@types/node": "^20",
 		"@types/react": "^18",
 		"@types/react-dom": "^18",
-		"eslint": "^8",
-		"eslint-config-next": "14.1.0",
+		"@typescript-eslint/eslint-plugin": "^7.5.0",
+		"@typescript-eslint/parser": "^7.5.0",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-prettier": "^5.1.3",
 		"eslint-plugin-storybook": "^0.8.0",
+		"prettier": "^3.2.5",
 		"storybook": "^7.6.17",
 		"typescript": "^5"
 	},

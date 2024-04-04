@@ -22,33 +22,33 @@ const ButtonLinkContainer = styled.span<IButtonLinkContainerProps>`
 					? css`
 							color: ${brandColors.giv[400]};
 							background-color: ${brandColors.giv[500]};
-					  `
+						`
 					: css`
 							color: ${neutralColors.gray[100]};
 							background-color: ${brandColors.pinky[500]};
-					  `;
+						`;
 			case 'secondary':
 				return props.disabled
 					? css`
 							color: ${brandColors.giv[400]};
 							background-color: ${brandColors.giv[500]};
-					  `
+						`
 					: css`
 							color: ${neutralColors.gray[100]};
 							background-color: ${brandColors.giv[500]};
-					  `;
+						`;
 			case 'texty':
 				return props.disabled
 					? css`
 							color: ${brandColors.giv[500]};
 							background-color: unset;
 							padding: 8px 24px;
-					  `
+						`
 					: css`
 							color: ${brandColors.deep[100]};
 							background-color: unset;
 							padding: 8px 24px;
-					  `;
+						`;
 			case 'texty-gray':
 				return props.disabled
 					? css`
@@ -56,12 +56,12 @@ const ButtonLinkContainer = styled.span<IButtonLinkContainerProps>`
 							background-color: unset;
 							padding: 8px 24px;
 							opacity: 0.5;
-					  `
+						`
 					: css`
 							color: ${neutralColors.gray[500]};
 							background-color: unset;
 							padding: 8px 24px;
-					  `;
+						`;
 			case 'texty-primary':
 				return props.disabled
 					? css`
@@ -69,12 +69,12 @@ const ButtonLinkContainer = styled.span<IButtonLinkContainerProps>`
 							background-color: unset;
 							padding: 8px 24px;
 							opacity: 0.5;
-					  `
+						`
 					: css`
 							color: ${brandColors.pinky[500]};
 							background-color: unset;
 							padding: 8px 24px;
-					  `;
+						`;
 			case 'texty-secondary':
 				return props.disabled
 					? css`
@@ -82,23 +82,23 @@ const ButtonLinkContainer = styled.span<IButtonLinkContainerProps>`
 							background-color: unset;
 							padding: 8px 24px;
 							opacity: 0.5;
-					  `
+						`
 					: css`
 							color: ${brandColors.giv[500]};
 							background-color: unset;
 							padding: 8px 24px;
-					  `;
+						`;
 
 			default:
 				return props.disabled
 					? css`
 							color: ${brandColors.giv[400]};
 							background-color: ${brandColors.giv[500]};
-					  `
+						`
 					: css`
 							color: ${neutralColors.gray[100]};
 							background-color: ${brandColors.pinky[500]};
-					  `;
+						`;
 		}
 	}}
 	${props =>
@@ -106,7 +106,7 @@ const ButtonLinkContainer = styled.span<IButtonLinkContainerProps>`
 			? ''
 			: css`
 					cursor: pointer;
-			  `}
+				`}
   :hover {
 		${props => {
 			if (props.disabled) return '';

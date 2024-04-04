@@ -11,7 +11,9 @@ const fontSize = {
 
 export const Lead = styled.div<ILeadProps>`
 	/* Body/Lead */
-	font-family: Red Hat Text, sans-serif;
+	font-family:
+		Red Hat Text,
+		sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	line-height: 150%;

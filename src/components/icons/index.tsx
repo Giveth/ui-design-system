@@ -485,3 +485,7 @@ export * from './QF/QF32';
 export * from './World/World32';
 export * from './WrongNetwork/WrongNetwork32';
 export * from './MessageSquare/MessageSquare32';
+export * from './Estimated/Estimated';
+export * from './Estimated/Estimated16';
+export * from './Estimated/Estimated24';
+export * from './Estimated/Estimated32';

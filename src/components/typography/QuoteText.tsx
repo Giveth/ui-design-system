@@ -6,7 +6,9 @@ export interface IQuoteTextProps {
 
 export const QuoteText = styled.div<IQuoteTextProps>`
 	/* QuoteText */
-	font-family: Red Hat Text, sans-serif;
+	font-family:
+		Red Hat Text,
+		sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	line-height: 134%;
