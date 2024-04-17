@@ -62,6 +62,10 @@ export * from './social-icons/Docs/Docs32';
 export * from './social-icons/XSocial/XSocial';
 export * from './social-icons/XSocial/XSocial18';
 export * from './social-icons/XSocial/XSocial24';
+export * from './social-icons/Telegram/Telegram';
+export * from './social-icons/Telegram/Telegram16';
+export * from './social-icons/WhatsApp/WhatsApp';
+export * from './social-icons/WhatsApp/WhatsApp18';
 
 export * from './DataBlock';
 export * from './DataBox';
