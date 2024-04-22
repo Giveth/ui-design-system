@@ -10,10 +10,7 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 	border: 0 solid;
 	border-radius: 48px;
 	padding: ${props => (props.size === 'large' ? '24px' : '16px')} 24px;
-	transition:
-		background-color 0.3s ease,
-		color 0.3s ease,
-		opacity 0.3s ease;
+	transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -109,7 +106,7 @@ const ButtonContainer = styled.button<IButtonContainerProps>`
 		}
 	}}
 	${props => (props.disabled ? '' : 'cursor: pointer;')}
-  :hover {
+  &:hover {
 		${props => {
 			if (props.disabled) return '';
 			switch (props.$buttonType) {
