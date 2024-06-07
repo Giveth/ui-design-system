@@ -15,4 +15,5 @@ export interface IButtonProps extends ComponentPropsWithoutRef<'button'> {
 	buttonType?: ButtonStyleType;
 	disabled?: boolean;
 	size?: ButtonSize;
+	id?: string;
 }
