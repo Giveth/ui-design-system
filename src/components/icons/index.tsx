@@ -489,3 +489,7 @@ export * from './Estimated/Estimated';
 export * from './Estimated/Estimated16';
 export * from './Estimated/Estimated24';
 export * from './Estimated/Estimated32';
+export * from './Warning/Warning';
+export * from './Warning/Warning16';
+export * from './Warning/Warning24';
+export * from './Warning/Warning32';
