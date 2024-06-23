@@ -5,11 +5,9 @@ export interface IButtonTextProps {
 }
 
 export const ButtonText = styled.span<IButtonTextProps>`
-	font-family:
-		Red Hat Text,
-		sans-serif;
+	font-family: Red Hat Text, sans-serif;
 	font-style: normal;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	font-weight: 700;
 	color: ${props => (props.color ? props.color : 'inherit')};
 	${props => {
