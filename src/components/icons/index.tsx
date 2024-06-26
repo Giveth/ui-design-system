@@ -66,6 +66,7 @@ export * from './Backward/Backward';
 export * from './Backward/Backward16';
 export * from './Backward/Backward24';
 export * from './Backward/Backward32';
+export * from './BookmarkFilled/BookmarkFilled';
 export * from './BookmarkFilled/BookmarkFilled16';
 export * from './BookmarkFilled/BookmarkFilled24';
 export * from './BookmarkFilled/BookmarkFilled32';
