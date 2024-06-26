@@ -501,3 +501,4 @@ export * from './Warning/Warning';
 export * from './Warning/Warning16';
 export * from './Warning/Warning24';
 export * from './Warning/Warning32';
+export * from './Warning/Warning64';
