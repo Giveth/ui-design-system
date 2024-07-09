@@ -14,6 +14,7 @@ interface IDataBlockProps {
 }
 
 const DataBlockContainer = styled.div``;
+
 const TitleContainer = styled.div`
 	display: flex;
 	align-items: center;
