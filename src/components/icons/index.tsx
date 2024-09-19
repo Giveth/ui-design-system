@@ -507,3 +507,4 @@ export * from './Warning/Warning24';
 export * from './Warning/Warning32';
 export * from './Warning/Warning64';
 export * from './QFNew/QFNew';
+export * from './QFNotEligible/QFNotEligible24';
